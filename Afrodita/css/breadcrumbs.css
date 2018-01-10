@@ -1,0 +1,21 @@
+.breadcrumbs__item{
+    opacity: .8;
+    display: inline-block;
+    text-align: right;
+    font-weight: 300;
+    font-style: italic;
+}
+.breadcrumbs__link{
+    text-decoration: underline;
+    color: #f89513;
+}
+.breadcrumbs__link-active{
+    color: #221f1f;
+    text-decoration: none;
+}
+.breadcrumbs__item:after{
+    content:"/";
+}
+.breadcrumbs__item:last-child:after{
+    display: none;
+}
