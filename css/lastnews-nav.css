@@ -1,0 +1,26 @@
+.lastnews-nav{
+	float: right;
+}
+.lastnews-nav__content{
+	line-height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.lastnews-nav__title{
+	margin: 5px 0 0 0;
+	color: #221f1f;
+}
+.lastnews-nav__color{
+	color: #656464;
+}
+.lastnews-nav__img{
+	width: 160px;
+    overflow: hidden;
+    background: #f5f5f5;
+    opacity: 0.8;
+    margin: 14px 0;
+    height: 100%;
+}
