@@ -1,0 +1,116 @@
+body {
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+@font-face {
+  font-family: 'gagalin';
+  src: url(../fonts/gagalin-regular-webfont.woff2);
+  src: url(../fonts/gagalin-regular-webfont.woff);
+  font-style: normal;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'lifehack';
+  src: url(../fonts/lifehack_medium-webfont.woff2);
+  src: url(../fonts/lifehack_medium-webfont.woff);
+  font-style: normal;
+  font-display: optional;
+}
+
+.wrapper{
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+.burger{
+  background-color: #000;
+  background-image: url(../img/video-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  color: #fff;
+}
+.burger__header{
+  justify-content: space-between;
+  padding-top: 13px;
+  display: flex;
+}
+.burger__nav{
+  margin-top: 15px;
+}
+.burger__nav-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.burger__nav-item:first-child{
+  list-style: none;
+}
+.burger__nav-link {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.burger__nav-item{
+  padding: 0 6.5px;
+  list-style-position: inside;
+  text-align: center;
+  line-height: 35px;
+}
+.burger__nav-item:last-child{
+  margin-top: 1px;
+  margin-left: 8px;
+  padding: 0;
+  width: 97px;
+  height: 35px;
+  list-style: none;
+  background-color: #e45028;
+  border-radius: 5px;
+}
+
+
+.burger__content{
+  display: flex;
+}
+.burger__main{
+  position: relative;
+  width: 50%;
+}
+.burger__main-burger{
+  margin: -8px 0px 0px 50px;
+}
+.burger__main-drops{
+  position: absolute;
+  left: 16px;
+  top: 60px;
+}
+.burger__title{
+  padding-top: 130px;
+  padding-left: 13px;
+  width: 50%;
+}
+.burger__title-up{
+  font-weight: 400;
+  font-family: 'gagalin', Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  color: #f9b43b;
+}
+.burger__title-down{
+  line-height: 61px;
+  letter-spacing: -1.6px;
+  font-weight: 500;
+  font-family: 'lifehack', Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  color: #fff;
+  display: block;
+  margin-top: 19px;
+}
