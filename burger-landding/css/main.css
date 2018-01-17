@@ -30,6 +30,7 @@ body {
   margin: 0 auto;
 }
 .burger{
+  background-position: center;
   background-color: #000;
   background-image: url(../img/video-bg.png);
   background-size: cover;
