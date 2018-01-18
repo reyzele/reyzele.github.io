@@ -1,8 +1,8 @@
 jQuery(document).ready(function () {
-  $("#hero").height($(window).height());
+  $("#burger, #about-us").height($(window).height());
   $(window).resize(function () {
-    $("#hero").height($(window).height());
-    $("#hero").css("min-height", "650px")
+    $("#burger, #about-us").height($(window).height());
+    $("#burger, #about-us").css("min-height", "650px")
   });
 });
 jQuery(document).ready(function (e) {
