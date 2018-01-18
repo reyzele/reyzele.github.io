@@ -174,15 +174,15 @@ section{
   display: block;
   margin-top: 19px;
 }
-.burger__arrow-scroll{
+.scroll-arrow{
   position: absolute;
-  margin: auto;
-  display: block;
-  right: 49.23%;
-  bottom: 37px;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -14.5px;
+  width: 29px;
+  height: 14px;
+  background-image: url(../img/arrow-scroll.png);
 }
-
-
 .about-us{
   background-color: #000;
   background-image: url(../img/about-us/bg.png);
