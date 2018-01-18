@@ -1,15 +1,22 @@
+*{
+  box-sizing: border-box;
+}
 body {
     overflow-y: scroll;
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+section{
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @font-face {
   font-family: 'gagalin';
   src: url(../fonts/gagalin-regular-webfont.woff2);
   src: url(../fonts/gagalin-regular-webfont.woff);
   font-style: normal;
-  font-display: optional;
 }
 @font-face {
   font-family: 'lifehack';
@@ -17,6 +24,16 @@ body {
   src: url(../fonts/lifehack_medium-webfont.woff);
   font-style: normal;
   font-display: optional;
+}
+.visuallyHidden{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .wrapper{
@@ -26,16 +43,49 @@ body {
 }
 
 .container{
-  width: 940px;
+  position: relative;
+  width: 940px; 
   margin: 0 auto;
 }
+.main-nav{
+  position: absolute;
+  right: -31px;
+  top: 91px;
+}
+.main-nav-list{
+  display: flex;
+  flex-direction: column;
+}
+.main-nav-item{
+  display: flex;
+  margin-bottom: 5.1px;
+  list-style: none;
+}
+.main-nav-link{
+  border: 1px solid transparent;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10em;
+}
+.main-nav-elipse{
+  margin: auto;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 10em;
+  margin-top: 4px;
+}
+.main-nav-link:hover{
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+
+
 .burger{
-  background-position: center;
   background-color: #000;
   background-image: url(../img/video-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
   color: #fff;
 }
 .burger__header{
@@ -62,6 +112,7 @@ body {
   font-size: 13px;
 }
 .burger__nav-item{
+  list-style: initial;
   padding: 0 6.5px;
   list-style-position: inside;
   text-align: center;
@@ -95,8 +146,8 @@ body {
   top: 60px;
 }
 .burger__title{
-  padding-top: 130px;
-  padding-left: 13px;
+  margin-top: 130px;
+  padding-left: 10px;
   width: 50%;
 }
 .burger__title-up{
@@ -104,6 +155,7 @@ body {
   font-family: 'gagalin', Arial, Helvetica, sans-serif;
   font-size: 72px;
   color: #f9b43b;
+  display: block;
 }
 .burger__title-down{
   line-height: 61px;
@@ -114,4 +166,68 @@ body {
   color: #fff;
   display: block;
   margin-top: 19px;
+}
+.burger__footer{
+  margin-top: 91px;
+  display: flex;
+}
+.burger__arrow-scroll{
+  margin: auto;
+  display: block;
+}
+.burger__arrow-scroll-img{
+
+}
+
+.about-us{
+  background-color: #000;
+  background-image: url(../img/about-us/bg.png);
+  color: #2f3234;
+}
+.about-us__title{
+  text-align: center;
+  padding-top: 121px;
+  font-weight: 400;
+  font-family: 'gagalin', Arial, Helvetica, sans-serif;
+  font-size: 72px;
+}
+.about-us__content{
+  margin-top: 10px;
+}
+.about-us__list{
+  display: flex;
+}
+.about-us__item{
+  display: flex;
+  flex-direction: column;
+  width: 31.4%;
+}
+.about-us__item-sprite{
+  width: 160px;
+  height: 150px;
+  background-image: url(../img/about-us/about-us-sprite.png);
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.about-us__item-sprite_meat{
+  background-position: 34px 30px;
+}
+.about-us__item-title{
+  letter-spacing: -0.7px;
+  display: block;
+  text-align: center;
+  font-family: 'lifehack', Arial, Helvetica, sans-serif;
+  font-size: 24.12px;
+  font-weight: 500;
+  color: #2f3234;
+}
+.about-us__item-text{
+  margin-top: 15px;
+  text-align: center;
+  color: #2f3234;
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 6px;
+  line-height: 24px;
 }
