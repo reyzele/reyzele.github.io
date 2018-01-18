@@ -8,7 +8,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 section{
-  height: 650px;
+  min-height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,15 +41,9 @@ section{
   min-height: 100%;
   overflow: hidden;
 }
-
-.container{
-  position: relative;
-  width: 940px; 
-  margin: 0 auto;
-}
 .main-nav{
-  position: absolute;
-  right: -31px;
+  position: fixed;
+  right: 50px;
   top: 91px;
 }
 .main-nav-list{
@@ -81,8 +75,11 @@ section{
   box-sizing: border-box;
   border: 1px solid #fff;
 }
-
-
+.container{
+  position: relative;
+  width: 940px; 
+  margin: 0 auto;
+}
 .burger{
   background-color: #000;
   background-image: url(../img/video-bg.png);
@@ -101,35 +98,43 @@ section{
   margin: 0;
   display: flex;
 }
-.burger__nav-item:first-child{
-  list-style: none;
+.burger__nav-item{
+  margin-right: 16px;
+  text-align: center;
+  line-height: 35px;
 }
 .burger__nav-link {
   color: #fff;
-  text-align: center;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 13px;
 }
-.burger__nav-item{
-  list-style: initial;
-  padding: 0 6.5px;
-  list-style-position: inside;
-  text-align: center;
-  line-height: 35px;
+.burger__nav-item::before{
+  box-sizing: border-box;
+  margin-right: 11px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #fff;
+  width: 4px;
+  height: 4px;
+  content: "";
+  border-radius: 10em;
+}
+.burger__nav-item:first-child::before{
+  content: none;
+}
+.burger__nav-item:last-child::before{
+  content: none;
 }
 .burger__nav-item:last-child{
+  margin-right: 0;
   margin-top: 1px;
-  margin-left: 8px;
-  padding: 0;
   width: 97px;
   height: 35px;
   list-style: none;
   background-color: #e45028;
   border-radius: 5px;
 }
-
-
 .burger__content{
   display: flex;
 }
@@ -172,8 +177,11 @@ section{
   display: flex;
 }
 .burger__arrow-scroll{
+  position: fixed;
   margin: auto;
   display: block;
+  right: 49.23%;
+  bottom: 40px;
 }
 .burger__arrow-scroll-img{
 
@@ -195,12 +203,14 @@ section{
   margin-top: 10px;
 }
 .about-us__list{
+  align-items: flex-start;
+  justify-content: space-between;
   display: flex;
 }
 .about-us__item{
   display: flex;
   flex-direction: column;
-  width: 31.4%;
+  width: 31.8%;
 }
 .about-us__item-sprite{
   width: 160px;
@@ -210,24 +220,26 @@ section{
   margin: auto;
 }
 .about-us__item-sprite_meat{
-  background-position: 34px 30px;
+  background-position: 32px 30px;
+}
+.about-us__item-sprite_hand{
+  background-position: -157px 30px;
+}
+.about-us__item-sprite_natural{
+  background-position: -364px 32px;
 }
 .about-us__item-title{
-  letter-spacing: -0.7px;
-  display: block;
+  line-height: 29px;
   text-align: center;
   font-family: 'lifehack', Arial, Helvetica, sans-serif;
-  font-size: 24.12px;
   font-weight: 500;
-  color: #2f3234;
+  letter-spacing: -0.6px;
 }
 .about-us__item-text{
-  margin-top: 15px;
+  margin-top: 12px;
   text-align: center;
-  color: #2f3234;
   opacity: .8;
   font-size: 14px;
   font-weight: 300;
-  padding-left: 6px;
   line-height: 24px;
 }
