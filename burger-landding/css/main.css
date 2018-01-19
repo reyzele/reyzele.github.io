@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+a{
+  color: #fff;
+}
 body {
     overflow-y: scroll;
     padding: 0;
@@ -8,7 +11,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 section{
-  min-height: 650px;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -77,12 +80,10 @@ section{
   border: 1px solid #fff;
 }
 .container{
-  position: relative;
   width: 940px; 
   margin: 0 auto;
 }
 .burger{
-  position: relative;
   background-color: #000;
   background-image: url(../img/video-bg.png);
   color: #fff;
@@ -238,4 +239,91 @@ section{
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.reviews{
+
+}
+.reviews__list{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews__item{
+  position: relative;
+  filter: grayscale(100%);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 50%;
+  background-position: top center;
+}
+.reviews__item:hover{
+  filter: none;
+}
+.reviews__item-photo1{
+  background-image: url(../img/reviews/photo1.jpg);
+}
+.reviews__item-photo2{
+  background-image: url(../img/reviews/photo2.jpg);
+}
+.reviews__item-photo3{
+  background-image: url(../img/reviews/photo3.jpg);
+}
+.reviews__item-photo4{
+  background-image: url(../img/reviews/photo4.jpg);
+}
+.reviews__item-photo5{
+  background-image: url(../img/reviews/photo5.jpg);
+}
+.reviews__item-photo6{
+  background-image: url(../img/reviews/photo6.jpg);
+}
+.reviews__item-photo7{
+  background-image: url(../img/reviews/photo7.jpg);
+}
+.reviews__item-photo8{
+  background-image: url(../img/reviews/photo8.jpg);
+}
+.reviews__item-content{
+  left: -9999px;
+  position: absolute;
+  padding: 47px 20px 0 20px;
+  color: #fff;
+  background-color: rgba(20, 20, 20, .7);
+  height: 100%;
+}
+.reviews__item:hover .reviews__item-content{
+  left: 0;
+}
+.reviews__item-title{
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'gagalin', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.reviews__item-text{
+  word-spacing: -0.3px;
+  line-height: 24px;
+  font-size: 14px;
+
+}
+.reviews__item-footer{
+  margin-top: 13px;
+}
+.reviews__item-footer-btn{
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 110px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #2f3234;
+}
+.reviews__item-footer-btn:hover{
+  background-color: #1f2122;
 }
