@@ -88,7 +88,15 @@ section{
   background-image: url(../img/video-bg.png);
   color: #fff;
 }
+.burger__container{
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .burger__header{
+  width: 100%;
   justify-content: space-between;
   padding-top: 13px;
   display: flex;
@@ -139,6 +147,11 @@ section{
   border-radius: 5px;
 }
 .burger__content{
+  padding-bottom: 197px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
   display: flex;
 }
 .burger__main{
@@ -146,16 +159,16 @@ section{
   width: 50%;
 }
 .burger__main-burger{
-  margin: -8px 0px 0px 50px;
+  margin: 58px 0px 0px 50px;
 }
 .burger__main-drops{
   position: absolute;
   left: 16px;
-  top: 60px;
+  top: 126px;
 }
 .burger__title{
   margin-top: 130px;
-  padding-left: 10px;
+  padding-left: 9px;
   width: 50%;
 }
 .burger__title-up{
@@ -189,9 +202,15 @@ section{
   background-image: url(../img/about-us/bg.png);
   color: #2f3234;
 }
+.about-us__container{
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .about-us__title{
   text-align: center;
-  padding-top: 121px;
   font-weight: 400;
   font-family: 'gagalin', Arial, Helvetica, sans-serif;
   font-size: 72px;
