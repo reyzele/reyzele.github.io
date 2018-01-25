@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Burger</title>
+  <title>Burger-Landding</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext"
@@ -12,193 +12,290 @@
 </head>
 <body>
   <div class="wrapper">
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-item">
-          <a href="#burger" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+    <!--MAIN NAV-->
+    <nav class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a href="#hero" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#about-us" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#best" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#reviews" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#reviews" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
-        <li class="main-nav-item">
-          <a href="#" class="main-nav-link scroll">
-            <div class="main-nav-elipse"></div>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link scroll">
+            <div class="pagination__elipse"></div>
           </a>
         </li>
       </ul>
     </nav>
-    <section id="burger" class="burger">
-      <div class="container burger__container">
-        <header class="burger__header">
-          <div class="burger__logo">
-            <img src="./img/logo.png" alt="logo" class="burger__logo-img">
+    <!--Main Content-->
+    <div class="maincontent">
+      <!--Section HERO-->
+      <section id="hero" class="section hero">
+        <div class="container hero__container">
+          <header class="header">
+            <div class="header__logo">
+              <a href="#" class="logo">
+                <img src="./img/logo.png" alt="logo" class="logo__img">
+              </a>
+            </div>
+            <div class="header__menu">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> о нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> бургеры</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> команда</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> меню</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__btn">
+              <a href="#" class="order-link"> Заказать</a>
+            </div>
+          </header>
+          <div class="hero__content">
+            <div class="hero__img">
+              <div class="hero__burger">
+                <img src="./img/content/steam.png" alt="Burger" class="hero__burger-img">
+              </div>
+              <div class="hero__drops">
+                <img src="./img/content/drops.png" alt="Drops" class="hero__drops-img">
+              </div>
+            </div>
+            <div class="hero__desc">
+              <h2 class="section__title"> Мы делаем</h2>
+              <div class="hero__desc-text"> натуральные бургеры</div>
+            </div>
           </div>
-          <nav class="burger__nav">
-            <ul class="burger__nav-list">
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> о нас</a>
+        </div>
+        <a href="#best" class="scroll">
+          <span class="scroll__arrow"></span>
+        </a>
+      </section>
+      
+      <!--Section BEST-->
+      <section id="best" class="section best">
+        <div class="container best__container">
+          <h2 class="section__title section__title--best"> Мы лучшие</h2>
+          <article class="best__content">
+            <ul class="best__list">
+              <li class="best__item">
+                <div class="best__item-sprite best__item-sprite_meat">
+                  <img src="./img/content/meat.png" alt="meat" class="visuallyhidden">
+                </div>
+                <h2 class="best__item-title">
+                  100% свежее мясо
+                </h2>
+                <h3 class="best__item-text">
+                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                </h3>
               </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> бургеры</a>
+              <li class="best__item">
+                <div class="best__item-sprite best__item-sprite_hand">
+                  <img src="./img/content/hand.png" alt="meat" class="visuallyhidden">
+                </div>
+                <h2 class="best__item-title">
+                  Ручная сборка
+                </h2>
+                <h3 class="best__item-text">
+                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный
+                  реформаторский пафос.
+                </h3>
               </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> команда</a>
-              </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> меню</a>
-              </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> отзывы</a>
-              </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> контакты</a>
-              </li>
-              <li class="burger__nav-item">
-                <a href="#" class="burger__nav-link"> заказать</a>
+              <li class="best__item">
+                <div class="best__item-sprite best__item-sprite_natural">
+                  <img src="./img/content/natural.png" alt="meat" class="visuallyhidden">
+                </div>
+                <h2 class="best__item-title">
+                  Натуральные ингредиенты
+                </h2>
+                <h3 class="best__item-text">
+                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                </h3>
               </li>
             </ul>
-          </nav>
-        </header>
-        <div class="burger__content">
-          <div class="burger__main">
-            <div class="burger__main-burger">
-              <img src="./img/steam.png" alt="Burger" class="burger__main-img">
-            </div>
-            <div class="burger__main-drops">
-              <img src="./img/drops.png" alt="Drops" class="burger__drops-img">
-            </div>
-          </div>
-          <h1 class="burger__title">
-              <span class="burger__title-up">мы делаем</span>
-              <span class="burger__title-down">натуральные<br> бургеры</span>
-          </h1>
+          </article>
         </div>
-      </div>
-      <a href="#about-us" class="scroll">
-        <span class="scroll-arrow"></span>
-      </a>
-    </section>
-    <section id="about-us" class="about-us">
-      <div class="container about-us__container">
-        <h1 class="about-us__title">
-          мы лучшие
-        </h1>
-        <article class="about-us__content">
-          <ul class="about-us__list">
-            <li class="about-us__item">
-              <div class="about-us__item-sprite about-us__item-sprite_meat">
-                <img src="./img/about-us/meat.png" alt="meat" class="visuallyHidden">
+        <a href="#reviews" class="scroll">
+          <span class="scroll-arrow"></span>
+        </a>
+      </section>
+
+      <!--Section REVIEWS-->
+      <section id="reviews" class="section reviews">
+        <div class="reviews__container">
+          <ul class="reviews__list">
+            <li class="reviews__item reviews__item-photo1">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptatibus praesentium tempore omnis, harum consequuntur iste veritatis consectetur eos blanditiis esse magnam, ipsam sit sint quidem error eligendi tenetur. Consequuntur nesciunt sapiente ullam numquam, quidem quis molestiae rerum consequatur sed.
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
               </div>
-              <h2 class="about-us__item-title">
-                100% свежее мясо
-              </h2>
-              <h3 class="about-us__item-text">
-                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-              </h3>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__item-sprite about-us__item-sprite_hand">
-                <img src="./img/about-us/meat.png" alt="meat" class="visuallyHidden">
+            <li class="reviews__item reviews__item-photo2">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                  мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
               </div>
-              <h2 class="about-us__item-title">
-                Ручная сборка
-              </h2>
-              <h3 class="about-us__item-text">
-                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный
-                реформаторский пафос.
-              </h3>
             </li>
-            <li class="about-us__item">
-              <div class="about-us__item-sprite about-us__item-sprite_natural">
-                <img src="./img/about-us/meat.png" alt="meat" class="visuallyHidden">
+            <li class="reviews__item reviews__item-photo3">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint maiores, at ipsam vero veritatis, quia voluptate, quas voluptatem odit incidunt! Facilis totam rem quo sapiente, iure fugit et a, molestiae enim soluta optio minus amet adipisci quod exercitationem doloribus!
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
               </div>
-              <h2 class="about-us__item-title">
-                Натуральные ингредиенты
-              </h2>
-              <h3 class="about-us__item-text">
-                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
-              </h3>
+            </li>
+            <li class="reviews__item reviews__item-photo4">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur tempore animi maxime mollitia porro, minima quisquam accusantium inventore vel quam cupiditate explicabo officia. Doloribus eaque ex alias accusamus molestias illo molestiae officia aliquid dolore cupiditate, exercitationem est! Vero, incidunt!
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
+              </div>
+            </li>
+            <li class="reviews__item reviews__item-photo5">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut qui iure consequuntur omnis error ex quibusdam dolor cum consequatur ullam nobis alias architecto sapiente, esse velit. Dolores animi dicta eaque blanditiis. Rerum repudiandae adipisci voluptas hic obcaecati repellendus eum.
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
+              </div>
+            </li>
+            <li class="reviews__item reviews__item-photo6">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel porro a assumenda at ea repellendus consequuntur, dicta consectetur harum ipsum et aperiam quo cum deleniti voluptatibus pariatur recusandae vitae doloribus laborum libero molestiae aspernatur nostrum est exercitationem? Laborum, adipisci velit.
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
+              </div>
+            </li>
+            <li class="reviews__item reviews__item-photo7">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum numquam, sequi quae possimus repudiandae dolores nihil sapiente molestiae iusto enim? Error velit perferendis laboriosam fuga? Aspernatur non eius soluta officia, commodi ducimus, in porro consequatur qui, impedit illo voluptatem!
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
+              </div>
+            </li>
+            <li class="reviews__item reviews__item-photo8">
+              <div class="reviews__item-content">
+                <h3 class="reviews__item-title">
+                  константин спилберг
+                </h3>
+                <span class="reviews__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minima voluptatum! Earum perferendis nemo ea soluta quae magnam inventore expedita nobis voluptatum delectus minus, nesciunt dolor praesentium. Rem qui perspiciatis eveniet, a ipsum architecto voluptatum alias, dolorem magni facilis tenetur.
+                </span>
+                <footer class="reviews__item-footer">
+                  <a href="#" class="reviews__btn">
+                    подробнее
+                  </a>
+                </footer>
+              </div>
             </li>
           </ul>
-        </article>
-      </div>
-      <a href="#reviews" class="scroll">
-        <span class="scroll-arrow"></span>
-      </a>
-    </section>
-    <section id="reviews" class="reviews">
-      <ul class="reviews__list">
-        <li class="reviews__item reviews__item-photo1">
-
-        </li>
-        <li class="reviews__item reviews__item-photo2">
-          <div class="reviews__item-content">
-            <h2 class="reviews__item-title">
-              константин спилберг
-            </h2>
-            <span class="reviews__item-text">
-              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-              мягкими, котлетка такой сочной, а сыр таким расплавленным.
-            </span>
-            <footer class="reviews__item-footer">
-              <a href="#" class="reviews__item-footer-btn">
-                подробнее
-              </a>
-            </footer>
-          </div>
-        </li>
-        <li class="reviews__item reviews__item-photo3">
-        
-        </li>
-        <li class="reviews__item reviews__item-photo4">
-        
-        </li>
-        <li class="reviews__item reviews__item-photo5">
-        
-        </li>
-        <li class="reviews__item reviews__item-photo6">
-        
-        </li>
-        <li class="reviews__item reviews__item-photo7">
-        
-        </li>
-        <li class="reviews__item reviews__item-photo8">
-        
-        </li>
-      </ul>
-      <a href="#about-us" class="scroll">
-        <span class="scroll-arrow"></span>
-      </a>
-    </section>
+          <a href="#best" class="scroll">
+            <span class="scroll-arrow"></span>
+          </a>
+        </div>
+      </section>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./js/jQuery.js"></script>
