@@ -303,7 +303,7 @@ ul {
   right: 0;
   bottom: 0;
   width: 50%;
-  background-color: rgba(50, 50, 50, 0.9);
+  background: rgba(47, 50, 52, 0.93);
   display: flex;
   flex-direction: column;
   padding-top: 89px;
@@ -356,7 +356,7 @@ ul {
 
 .team-acco__wrap {
   display: flex;
-  margin-left: 18px;
+  margin-left: 17px;
   margin-bottom: 18px; }
 
 .team-acco__pic {
@@ -366,7 +366,7 @@ ul {
   width: 100px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 21px;
   align-items: center;
   display: flex; }
 
