@@ -1,0 +1,115 @@
+.reviews {
+
+}
+
+.reviews__container {
+    height: 100%;
+    width: 100%;
+}
+
+.reviews__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    display: flex;
+    align-items: center;
+    flex: 0 0 25%;
+    position: relative;
+    filter: grayscale(100%);
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    justify-content: center;
+    &-photo1 {
+        background-image: url('../img/content/reviews/photo1.jpg');
+    }
+    &-photo2 {
+        background-image: url('../img/content/reviews/photo2.jpg');
+    }
+    &-photo3 {
+        background-image: url('../img/content/reviews/photo3.jpg');
+    }
+    &-photo4 {
+        background-image: url('../img/content/reviews/photo4.jpg');
+    }
+    &-photo5 {
+        background-image: url('../img/content/reviews/photo5.jpg');
+    }
+    &-photo6 {
+        background-image: url('../img/content/reviews/photo6.jpg');
+    }
+    &-photo7 {
+        background-image: url('../img/content/reviews/photo7.jpg');
+    }
+    &-photo8 {
+        background-image: url('../img/content/reviews/photo8.jpg');
+    }
+    &::after {
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background: transparent;
+        z-index: 1;
+        transition: all .3s;
+    }
+    &:hover::after {
+        background-color: rgba(20, 20, 20, .7);
+    }
+    &:hover .reviews__item-content{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.reviews__item-content {
+    transform: scale(.9);
+    opacity: 0;
+    z-index: 2;
+    padding: 0 20px;
+    transition: all .3s;
+    position: relative;
+}
+
+.reviews__item-title {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'gagalin', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.reviews__item-text {
+    color: #fff;
+    word-spacing: -0.3px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.reviews__item-footer {
+    margin-top: 13px;
+}
+
+.reviews__btn {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: $dark;
+    &:hover {
+        background-color: darken($dark, 7%);
+    }
+}

@@ -1,0 +1,36 @@
+.pagination{
+  transform: translateY(-50%);
+  z-index: 10;
+  position: fixed;
+  right: 50px;
+  top: 50%;
+}
+.pagination__list{
+  display: flex;
+  flex-direction: column;
+}
+.pagination__item{
+  display: flex;
+  margin-bottom: 5.1px;
+  list-style: none;
+}
+.pagination__link{
+  border: 1px solid transparent;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10em;
+}
+.pagination__elipse{
+  margin: auto;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 10em;
+  margin-top: 4px;
+}
+.pagination__link:hover{
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}

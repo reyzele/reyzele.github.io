@@ -1,0 +1,67 @@
+.best {
+  background-image: url('../img/bg/best-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__title--best {
+    color: $dark;
+    padding: 0;
+  }
+
+  .best__list {
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .best__item {
+    display: flex;
+    flex-direction: column;
+    width: 31.8%;
+  }
+
+  .best__pic {
+    width: 160px;
+    height: 149px;
+    background-image: url('../img/content/about-us-sprite.png');
+    background-repeat: no-repeat;
+    margin: auto;
+    &_meat {
+      background-position: 32px 30px;
+    }
+    &_hand {
+      background-position: -157px 30px;
+    }
+    &_natural {
+      background-position: -364px 33px;
+    }
+  }
+
+  .best__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .best__title {
+    line-height: 29px;
+    text-align: center;
+    font-family: 'lifehack', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    font-size: 24px;
+  }
+
+  .best__desc {
+    margin-top: 14px;
+    text-align: center;
+    opacity: .8;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
