@@ -331,7 +331,6 @@ ul {
     height: auto; }
 
 .team-acco__tr {
-  letter-spacing: -0.1px;
   margin-top: 21px;
   display: flex;
   align-items: center;
@@ -358,10 +357,10 @@ ul {
 .team-acco__wrap {
   display: flex;
   margin-left: 18px;
-  margin-bottom: 17px; }
+  margin-bottom: 18px; }
 
 .team-acco__pic {
-  margin-top: 6px;
+  margin-top: 4px;
   justify-content: center;
   height: 100px;
   width: 100px;
