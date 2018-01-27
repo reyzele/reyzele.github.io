@@ -18,16 +18,17 @@
 }
 
 .section{
+  position: relative;
   height: 100vh;
-  min-width: 980px;
+  min-width: 940px;
   min-height: 650px;
 }
 
 .order-link {
   min-width: 98px;
-  padding: 10.5px 15px;
+  padding: 9px 15px;
   border-radius: 5px;
-  background-color: $orange;
+  background-color: #e25028;
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -51,4 +52,34 @@
   height: 14px;
   background-image: url('../img/arrow-scroll.png');
   }
+}
+
+.section-title {
+  color: $yellow;
+  font-family: 'Gagalin';
+  font-size: 72px;
+  line-height: 1.42;
+  margin: 0;
+  font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+	color: $dark;
+	font-weight: 300;
+	font-size: 14px;
+}
+::-moz-placeholder{
+	color: $dark;
+	font-weight: 300;
+	font-size: 14px;
+}
+:-moz-placeholder{
+	color: $dark;
+	font-weight: 300;
+	font-size: 14px;
+}
+:-ms-input-placeholder{
+	color: $dark;
+	font-weight: 300;
+	font-size: 14px;
 }

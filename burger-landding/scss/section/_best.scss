@@ -1,14 +1,12 @@
 .best {
-  background-image: url('../img/bg/best-bg.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background: url('../img/bg/best-bg.jpg') center bottom no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section__title--best {
+.section-title--best {
     color: $dark;
     padding: 0;
   }

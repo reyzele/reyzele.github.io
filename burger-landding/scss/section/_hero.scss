@@ -14,7 +14,7 @@
 }
 
 .hero__content {
-  margin-left: 22px;
+  padding-left: 11px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -43,19 +43,10 @@
 }
 
 .hero__desc {
+  padding-left: 4px;
   margin-top: 57px;
   flex-direction: column;
   justify-content: center;
-}
-
-
-.section__title {
-  color: #f9b43b;
-  font-family: 'Gagalin';
-  font-size: 72px;
-  font-weight: 300;
-  line-height: 1.42;
-  margin: 0;
 }
 
 .hero__desc-text {
