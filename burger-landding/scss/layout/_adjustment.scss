@@ -5,11 +5,11 @@
 
 .maincontent {
   height: 100%;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .container {
-  width: 940px;
+  width: rem(940px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -20,18 +20,18 @@
 .section{
   position: relative;
   height: 100vh;
-  min-width: 940px;
-  min-height: 650px;
+  min-width: rem(940px);
+  min-height: rem(650px);
 }
 
 .order-link {
-  min-width: 98px;
-  padding: 9px 15px;
-  border-radius: 5px;
+  min-width: rem(98px);
+  padding: rem(9px) rem(15px);
+  border-radius: rem(5px);
   background-color: #e25028;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -45,11 +45,11 @@
 
   &__arrow {
   position: absolute;
-  bottom: 40px;
+  bottom: rem(40px);
   left: 50%;
   transform: translateX(-50%);
-  width: 29px;
-  height: 14px;
+  width: rem(29px);
+  height: rem(14px);
   background-image: url('../img/arrow-scroll.png');
   }
 }
@@ -57,7 +57,7 @@
 .section-title {
   color: $yellow;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   line-height: 1.42;
   margin: 0;
   font-weight: 400;
@@ -66,20 +66,20 @@
 ::-webkit-input-placeholder {
 	color: $dark;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 }
 ::-moz-placeholder{
 	color: $dark;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 }
 :-moz-placeholder{
 	color: $dark;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 }
 :-ms-input-placeholder{
 	color: $dark;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 }

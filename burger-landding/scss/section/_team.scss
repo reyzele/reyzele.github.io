@@ -12,18 +12,18 @@
   background: rgba(#2f3234, .93);
   display: flex;
   flex-direction: column;
-  padding-top: 89px;
-  padding-left: 98px;
+  padding-top: rem(89px);
+  padding-left: rem(98px);
 }
 
 .team__content {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: rem(350px);
 }
 
 .section-title--team {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .team-acco__item {
@@ -32,7 +32,9 @@
 }
 
 .team-acco__item--active {
+  transition: all 1s;
   height: auto;
+  opacity: 1;
   .team-acco__tr {
   color: $yellow;
 
@@ -41,52 +43,55 @@
     }
   }
   .team-acco__content {
+    opacity: 1;
     height: auto;
   }
 }
 
 .team-acco__tr {
-  margin-top: 21px;
+  margin-top: rem(21px);
   display: flex;
   align-items: center;
   color: #fff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'Gagalin';
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 
   &:before {
-    margin-right: 10px;
+    margin-right: rem(10px);
     content: "";
     height: 0;
     width: 0;
-    border: 4.5px solid transparent;
+    border: rem(4.5px) solid transparent;
     border-top-color: $yellow;
     border-bottom-width: 0px;
   }
 }
 
 .team-acco__content {
+  opacity: 0;
   height: 0;
   overflow: hidden;
   width: 100%;
   flex-flow: row nowrap;
   display: flex;
+  transition: all 1s;
 }
 
 .team-acco__wrap {
   display: flex;
-  margin-left: 17px;
-  margin-bottom: 18px;
+  margin-left: rem(17px);
+  margin-bottom: rem(18px);
 }
 
 .team-acco__pic {
-  margin-top: 4px;
+  margin-top: rem(4px);
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: rem(100px);
+  width: rem(100px);
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 21px;
+  margin-right: rem(21px);
   align-items: center;
   display: flex;
   &-img {
@@ -101,15 +106,15 @@
 }
 
 .team-acco__text-title {
-  margin-bottom: 14px;
-  font-size: 14px;
+  margin-bottom: rem(14px);
+  font-size: rem(14px);
   color: #fff;
   font-weight: bold;
 }
 
 .team-acco__text-content {
-  line-height: 24px;
+  line-height: rem(24px);
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
 }

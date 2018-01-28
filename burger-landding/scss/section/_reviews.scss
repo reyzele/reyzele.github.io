@@ -73,7 +73,7 @@
     transform: scale(.9);
     opacity: 0;
     z-index: 2;
-    padding: 0 20px;
+    padding: 0 rem(20px);
     transition: all .3s;
     position: relative;
 }
@@ -81,33 +81,33 @@
 .reviews__item-title {
     color: #fff;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     font-family: 'gagalin', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
 }
 
 .reviews__item-text {
     color: #fff;
-    word-spacing: -0.3px;
-    line-height: 24px;
-    font-size: 14px;
+    word-spacing: rem(-0.3px);
+    line-height: rem(24px);
+    font-size: rem(14px);
 }
 
 .reviews__item-footer {
-    margin-top: 13px;
+    margin-top: rem(13px);
 }
 
 .reviews__btn {
     color: #fff;
     display: block;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
-    line-height: 35px;
+    line-height: rem(35px);
     text-align: center;
     text-transform: uppercase;
-    width: 110px;
-    height: 35px;
-    border-radius: 4px;
+    width: rem(110px);
+    height: rem(35px);
+    border-radius: rem(4px);
     background-color: $dark;
     &:hover {
         background-color: darken($dark, 7%);

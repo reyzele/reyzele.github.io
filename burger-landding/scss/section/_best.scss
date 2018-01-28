@@ -24,19 +24,19 @@
   }
 
   .best__pic {
-    width: 160px;
-    height: 149px;
+    width: rem(160px);
+    height: rem(149px);
     background-image: url('../img/content/about-us-sprite.png');
     background-repeat: no-repeat;
     margin: auto;
     &_meat {
-      background-position: 32px 30px;
+      background-position: rem(32px) rem(30px);
     }
     &_hand {
-      background-position: -157px 30px;
+      background-position: rem(-157px) rem(30px);
     }
     &_natural {
-      background-position: -364px 33px;
+      background-position: rem(-364px) rem(33px);
     }
   }
 
@@ -47,19 +47,19 @@
   }
 
   .best__title {
-    line-height: 29px;
+    line-height: rem(29px);
     text-align: center;
     font-family: 'lifehack', Arial, Helvetica, sans-serif;
     font-weight: 500;
-    letter-spacing: -0.6px;
-    font-size: 24px;
+    letter-spacing: rem(-0.6px);
+    font-size: rem(24px);
   }
 
   .best__desc {
-    margin-top: 14px;
+    margin-top: rem(14px);
     text-align: center;
     opacity: .8;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
   }

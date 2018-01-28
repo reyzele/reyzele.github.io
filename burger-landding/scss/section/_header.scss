@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 14px;
+  padding-top: rem(14px);
 }
 
 .header__logo {
@@ -12,11 +12,11 @@
 }
 
 .header__menu {
-  padding-bottom: 14px;
+  padding-bottom: rem(14px);
 }
 
 .nav {
-  margin-right: 14px;
+  margin-right: rem(14px);
   &__list {
     margin: 0;
     padding: 0;
@@ -31,8 +31,8 @@
     display: inline-block;
     vertical-align: middle;
     content: '';
-    @include circle(5px, #fff);
-    margin: 0 11.5px;
+    @include circle(rem(5px), #fff);
+    margin: 0 rem(11.5px);
   }
   &:last-child:after {
     display: none;
@@ -41,7 +41,7 @@
 
 .nav__link {
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -55,5 +55,5 @@
 }
 
 .header__btn {
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }

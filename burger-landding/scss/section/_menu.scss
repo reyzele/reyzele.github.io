@@ -4,13 +4,13 @@
 }
 
 .menu__container {
-  width: 940px;
+  width: rem(940px);
   margin: auto;
 }
 
 .section-title--menu {
-  padding-top: 88px;
-  padding-left: 16px;
+  padding-top: rem(88px);
+  padding-left: rem(16px);
   color: #fff;
 }
 
@@ -26,8 +26,8 @@
   display: flex;
 
   &_active .menu__acco-text {
-    max-width: 540px;
-    padding: 62px 34px;
+    max-width: rem(540px);
+    padding: rem(62px) rem(34px);
   }
   &_active .menu__acco-title {
     color: $yellow;
@@ -39,17 +39,17 @@
 }
 
 .menu__acco-title {
-  width: 80px;
+  width: rem(80px);
   background: rgba(20, 20, 20, .7);
   position: relative;
   cursor: pointer;
   font-family: 'Gagalin';
-  font-size: 40px;
+  font-size: rem(40px);
   color: #fff;
 }
 
 .menu__acco-rotate {
-  padding-left: 40px;
+  padding-left: rem(40px);
   display: inline-block;
   position: absolute;
   top: 100%;
@@ -63,9 +63,9 @@
   overflow: hidden;
   max-width: 0;
   background: rgba(47, 50, 52, 0.93);
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   color: #fff;
-  line-height: 26px;
+  line-height: rem(26px);
   transition: all 1s;
 }

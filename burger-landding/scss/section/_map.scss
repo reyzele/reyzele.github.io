@@ -19,9 +19,9 @@
 
 .footer__container {
   display: flex;
-  width: 940px;
+  width: rem(940px);
   margin: auto;
-  padding: 10px 0;
+  padding: rem(10px) 0;
 }
 
 .footer__block {
@@ -30,9 +30,9 @@
 
 .footer__contacts {
   color: #fff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  margin-bottom: 2px;
+  margin-bottom: rem(2px);
 }
 
 .footer__tel {
@@ -42,8 +42,8 @@
 .footer__tel-link {
   font-weight: bold;
   color: $orange;
-  font-size: 14px;
-  margin-left: 5px;
+  font-size: rem(14px);
+  margin-left: rem(5px);
   &:hover {
     text-decoration: underline;
   }
@@ -53,21 +53,21 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  margin-top: 12px;
+  margin-top: rem(12px);
 }
 
 .social-sprite {
   fill: #595959;
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   &:hover {
     fill: $orange;
   }
 }
 
 .footer__social-link {
-  margin-right: 20px;
+  margin-right: rem(20px);
    &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
