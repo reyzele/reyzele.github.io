@@ -3,7 +3,9 @@
 @import "config/_variables.scss";
 @import "config/_mixins.scss";
 
-// media
+//media
+@import "config/_media.scss";
+
 
 
 // base
@@ -14,7 +16,6 @@
 
 // section
 @import "section/_hero.scss";
-  @import "section/_header.scss";
 @import "section/_best.scss";
 @import "section/_slider.scss";
 @import "section/_team.scss";
@@ -22,3 +23,15 @@
 @import "section/_reviews.scss";
 @import "section/_order.scss";
 @import "section/_map.scss";
+
+// blocks
+@import "blocks/_header.scss";
+@import "blocks/_order-link.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_scroll.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_hamburger-menu-link.scss";
+@import "blocks/_section-title.scss";
+@import "blocks/_form.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_social-sprite.scss";

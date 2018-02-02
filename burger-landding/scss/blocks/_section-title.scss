@@ -1,0 +1,50 @@
+.section-title {
+  color: $yellow;
+  font-family: 'Gagalin';
+  font-size: rem(72px);
+  line-height: 1.42;
+  font-weight: 400;
+  margin: 0;
+
+  @include phones {
+    font-size: 50px;
+  }
+}
+
+.section-title--hero {
+  @include phones {
+    font-size: rem(72px);
+    margin-bottom: -6px;
+  }
+}
+
+.section-title--best {
+  color: $dark;
+}
+
+.section-title--team {
+  margin-bottom: rem(5px);
+
+  @include phones {
+    margin-bottom: 12px;
+  }
+}
+
+.section-title--menu {
+  padding-top: rem(88px);
+  padding-left: rem(16px);
+  color: #fff;
+  overflow: hidden;
+
+  @include tablets {
+    padding-left: 0;
+  }
+}
+
+.section-title--order{
+  text-align: center;
+
+  @include phones {
+    line-height: 1.2;
+  }
+}

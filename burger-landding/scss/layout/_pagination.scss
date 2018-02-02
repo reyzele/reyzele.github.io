@@ -4,6 +4,10 @@
   position: fixed;
   right: rem(50px);
   top: 50%;
+
+  @include tablets {
+    display: none;
+  }
 }
 .pagination__list{
   display: flex;

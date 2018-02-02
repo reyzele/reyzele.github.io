@@ -6,147 +6,16 @@
   align-items: center;
 }
 
-.form {
-  margin-top: rem(25px);
-  &__elem {
+.order__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+  @include tablets {
+    margin-bottom: rem(120px);
   }
-  &__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    &-block {
-      width: 49%;
-    }
-  }
- 
-  &__row {
-    display: flex;
-    margin-bottom: rem(17px);
-    &_comment {
-      height: 59%;
-    }
-  }
-  &__block {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-right: rem(20px);
-  
-    &-title {
-      margin-bottom: rem(5px);
-      font-size: rem(14px);
-      font-weight: 300;
-      color: #fff;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  &__input {
-    color: $dark;
-    font-weight: 300;
-    font-family: 'Ubuntu';
-    border: rem(2px) solid white;
-    font-size: rem(14px);
-    display: flex;
-    border-radius: rem(5px);
-    padding: rem(7px);
-    width: 100%;
-      &-txt {
-        flex: 1;
-      }
-    }
-  &__radio-trigger {
-    margin-right: rem(21px);
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    &:last-child {
-      margin-right: 0;
-    }
-    &_custom {
-      margin-right: rem(9px);
-      background-color: #fff;
-      vertical-align: middle;
-      position: relative;
-      display: inline-block;
-      width: rem(15px);
-      height: rem(15px);
-      border-radius: 50%;
-    }
-    &_title {
-      color: #fff;
-      font-size: rem(14px);
-      font-weight: 300;
-    }
-  }
-  &__checkbox {
-    align-items: center;
-    margin-top: rem(6px);
-    display: flex;
-    &_custom {
-      margin-right: rem(9px);
-      background-color: #fff;
-      vertical-align: middle;
-      position: relative;
-      display: inline-block;
-      width: rem(15px);
-      height: rem(15px);
-    }
-    &_title {
-      font-size: rem(14px);
-      font-weight: 300;
-      color: #fff;
-    }
-  }
-}
 
-.order-link--transparent {
-  text-transform: none;
-  font-size: rem(14px);
-  font-weight: 300;
-  background-color: transparent;
-  margin-left: rem(5px);
-  &:hover {
-    background-color: transparent;
-    text-decoration: underline;
+  @include phones {
+    margin-bottom: 4px;
   }
-}
-
-
-input[type="radio"]:checked + .form__radio-trigger_custom:before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: rem(4px);
-  right: rem(4px);
-  bottom: rem(4px);
-  left: rem(4px);
-	background: $orange;
-  border-radius: 50%;
-}
-
-input[type="checkbox"]:checked + .form__checkbox_custom:before{
-  content: "";
-  background-image: url('../img/content/checkmark2.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  position: absolute;
-}
-
-textarea, input{
-    border-radius: rem(2px);
-    outline: none;
-    resize: none;
-    border: rem(2px) solid #fff;
-}
-
-input:focus, textarea:focus{
-    border: rem(2px) solid $yellow;
 }

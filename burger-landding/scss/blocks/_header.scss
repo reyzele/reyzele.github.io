@@ -1,0 +1,26 @@
+.header {
+  flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(14px);
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__menu {
+  padding-bottom: rem(14px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(6px);
+}
