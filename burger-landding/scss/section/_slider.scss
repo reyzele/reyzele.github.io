@@ -1,4 +1,163 @@
 .slider {
+  display: flex;
   background: url('../img/bg/slider-bg.jpg') center center no-repeat;
   background-size: cover;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider__wrap {
+  position: relative;
+}
+
+.slider__side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__side--left {
+  left: -4%;
+}
+
+.slider__side--right {
+  right: -4%;
+}
+
+.slider-arrow-link {
+  display: flex;
+}
+
+.slider__arrow {
+  fill: #fff;
+  width: 27px;
+  height: 14px;
+
+  &-left {
+    transform: rotate(90deg);
+  }
+
+  &-right {
+    transform: rotate(-90deg);
+  }
+}
+
+.slider__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.slider__content-block {
+  width: 49%;
+}
+
+.slider__menu-btn {
+  z-index: 10;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 21px;
+  width: 90px;
+  height: 90px;
+  background-color: #f08c33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider__menu-svg {
+  fill: #fff;
+  width: 46px;
+  height: 44px;
+}
+
+.slider__menu-title {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Gagalin;
+}
+
+.slider__hero {
+  width: 100%;
+  padding: 21% 0;
+}
+
+.slider__hero-title {
+  color: rgba(255,255,255,.5);
+  font-family: Gagalin;
+  position: absolute;
+}
+
+.slider__hero-title--top {
+  bottom: 41px;
+  font-size: 20px;
+  left: 14px;
+}
+
+.slider__hero-title--bottom {
+  left: 16px;
+  bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.sliger__img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.slider__kkal-svg {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  fill:rgba(255,255,255,.5);
+}
+
+.slider__desc {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.slider__order {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.slider__order-block {
+  width: 50%;
+}
+
+.slider__order-block--btn {
+  padding-bottom: 19px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.slider__order-text {
+  color: $orange;
+  font-family: Gagalin;
+}
+
+.slider__order-text--big {
+  font-size: 72px;
+}
+
+.slider__order-text--little {
+  font-size: 30px;
 }

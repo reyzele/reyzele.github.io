@@ -19,8 +19,6 @@
   background: url('../img/bg/best-bg.jpg') center bottom no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include tablets {
     background-image: url('../img/bg/best-bg-tablets.jpg');

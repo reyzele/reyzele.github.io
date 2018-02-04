@@ -40,10 +40,6 @@
   @include tablets {
     width: auto; 
   }
-
-  @include phones {
-    width: 83%; 
-  }
 }
 
 .hero__img {
@@ -54,6 +50,10 @@
    padding: 0;
    margin: 0;
  }
+
+ @include phones {
+    width: 83%;
+  }
 }
 
 .hero__img-burger {

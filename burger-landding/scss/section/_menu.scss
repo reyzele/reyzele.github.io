@@ -45,6 +45,11 @@
   font-size: rem(40px);
   color: #fff;
 
+  @include tablets {
+    width: rem(60px);
+    min-width: rem(60px);
+  }
+
   &_m {
     background-image: url("../img/content/menu-content-m.jpg");
     background-position: center;

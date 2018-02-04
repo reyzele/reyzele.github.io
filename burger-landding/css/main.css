@@ -69,7 +69,7 @@ ul {
       min-height: 64rem; } }
   @media screen and (max-width: 480px) {
     .section {
-      min-height: 50rem; } }
+      min-height: 800px; } }
 
 .container {
   max-width: 940px;
@@ -187,9 +187,6 @@ input:focus, textarea:focus {
   @media screen and (max-width: 768px) {
     .hero__img, .hero__desc {
       width: auto; } }
-  @media screen and (max-width: 480px) {
-    .hero__img, .hero__desc {
-      width: 83%; } }
 
 .hero__img {
   margin-top: -0.125rem;
@@ -198,6 +195,9 @@ input:focus, textarea:focus {
     .hero__img {
       padding: 0;
       margin: 0; } }
+  @media screen and (max-width: 480px) {
+    .hero__img {
+      width: 83%; } }
 
 .hero__img-burger {
   max-width: 100%;
@@ -247,9 +247,7 @@ input:focus, textarea:focus {
 .best {
   background: url("../img/bg/best-bg.jpg") center bottom no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  display: flex; }
   @media screen and (max-width: 768px) {
     .best {
       background-image: url("../img/bg/best-bg-tablets.jpg"); } }
@@ -324,8 +322,138 @@ input:focus, textarea:focus {
   line-height: 24px; }
 
 .slider {
+  display: flex;
   background: url("../img/bg/slider-bg.jpg") center center no-repeat;
   background-size: cover; }
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.slider__wrap {
+  position: relative; }
+
+.slider__side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.slider__side--left {
+  left: -4%; }
+
+.slider__side--right {
+  right: -4%; }
+
+.slider-arrow-link {
+  display: flex; }
+
+.slider__arrow {
+  fill: #fff;
+  width: 27px;
+  height: 14px; }
+  .slider__arrow-left {
+    transform: rotate(90deg); }
+  .slider__arrow-right {
+    transform: rotate(-90deg); }
+
+.slider__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.slider__content-block {
+  width: 49%; }
+
+.slider__menu-btn {
+  z-index: 10;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 21px;
+  width: 90px;
+  height: 90px;
+  background-color: #f08c33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.slider__menu-svg {
+  fill: #fff;
+  width: 46px;
+  height: 44px; }
+
+.slider__menu-title {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Gagalin; }
+
+.slider__hero {
+  width: 100%;
+  padding: 21% 0; }
+
+.slider__hero-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Gagalin;
+  position: absolute; }
+
+.slider__hero-title--top {
+  bottom: 41px;
+  font-size: 20px;
+  left: 14px; }
+
+.slider__hero-title--bottom {
+  left: 16px;
+  bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.sliger__img {
+  max-width: 100%;
+  min-height: 100%; }
+
+.slider__kkal-svg {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  fill: rgba(255, 255, 255, 0.5); }
+
+.slider__desc {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff; }
+
+.slider__order {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  width: 100%; }
+
+.slider__order-block {
+  width: 50%; }
+
+.slider__order-block--btn {
+  padding-bottom: 19px;
+  display: flex;
+  align-items: flex-end; }
+
+.slider__order-text {
+  color: #e25028;
+  font-family: Gagalin; }
+
+.slider__order-text--big {
+  font-size: 72px; }
+
+.slider__order-text--little {
+  font-size: 30px; }
 
 .team {
   background: url("../img/bg/team-bg.jpg") center center no-repeat;
@@ -514,6 +642,10 @@ input:focus, textarea:focus {
   font-family: 'Gagalin';
   font-size: 2.5rem;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .menu__acco-title {
+      width: 3.75rem;
+      min-width: 3.75rem; } }
   .menu__acco-title_m {
     background-image: url("../img/content/menu-content-m.jpg");
     background-position: center; }
@@ -828,12 +960,21 @@ input:focus, textarea:focus {
 
 .section-title--best {
   color: #2f3234; }
+  @media screen and (max-width: 480px) {
+    .section-title--best {
+      margin-bottom: 16px; } }
 
 .section-title--team {
   margin-bottom: 0.3125rem; }
   @media screen and (max-width: 480px) {
     .section-title--team {
       margin-bottom: 12px; } }
+
+.section-title--slider {
+  margin-top: 16px;
+  color: #fff;
+  line-height: 0.9;
+  margin-bottom: 43px; }
 
 .section-title--menu {
   padding-top: 5.5rem;
