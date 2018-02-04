@@ -25,7 +25,7 @@
     padding: rem(62px) rem(34px);
 
     @include tablets {
-      max-width: 530px;
+      max-width: rem(588px);
     }
   }
   &_active .menu__acco-title {
@@ -44,6 +44,7 @@
   font-family: 'Gagalin';
   font-size: rem(40px);
   color: #fff;
+  background-size: cover;
 
   @include tablets {
     width: rem(60px);

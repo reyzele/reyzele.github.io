@@ -2,6 +2,7 @@
   fill: #595959;
   width: 20px;
   height: 20px;
+  transition: fill .5s;
   &:hover {
     fill: $orange;
   }

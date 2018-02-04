@@ -5,14 +5,29 @@
 }
 
 .slider__container {
+  max-width: calc(940px + 60px);
+  padding: 0 rem(30px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+   @include tablets {
+    padding: 0;
+  }  
 }
 
 .slider__wrap {
   position: relative;
+
+  @include tablets {
+  display: flex;
+  justify-content: center;
+  }
+
+  @include tablets {
+  position: static;
+  }
 }
 
 .slider__side {
@@ -23,10 +38,26 @@
 
 .slider__side--left {
   left: -4%;
+
+  @include tablets {
+  left: 38px;
+  }
+
+  @include phones {
+  left: 0;
+  }
 }
 
 .slider__side--right {
   right: -4%;
+
+  @include tablets {
+  right: 38px;
+  }
+
+  @include phones {
+  right: 0;
+  }
 }
 
 .slider-arrow-link {
@@ -53,10 +84,32 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @include tablets {
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+  }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .slider__content-block {
   width: 49%;
+
+  @include tablets {
+    margin-top: 2px;
+    width: auto;
+  }
+
+  @include phones {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__menu-btn {
@@ -72,6 +125,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @include tablets {
+    top: 0px;
+    left: 52px;
+  }
+
+  @include phones {
+    left: 0;
+  }
 }
 
 .slider__menu-svg {
@@ -81,15 +143,25 @@
 }
 
 .slider__menu-title {
-  margin-top: 4px;
+  margin-top: 5px;
   color: #fff;
   font-size: 14px;
   font-family: Gagalin;
+  margin-bottom: -7px;
 }
 
 .slider__hero {
   width: 100%;
   padding: 21% 0;
+
+  @include tablets {
+    padding: 75px 0 0 0;
+  }
+
+  @include phones {
+    width: 84%;
+    padding: 108px 0 0 0;
+  }
 }
 
 .slider__hero-title {
@@ -102,6 +174,17 @@
   bottom: 41px;
   font-size: 20px;
   left: 14px;
+
+  @include tablets {
+    bottom: inherit;
+    left: inherit;
+    top: 25px;
+    right: 64px;
+  }
+
+   @include phones {
+    right: 12px;
+  }
 }
 
 .slider__hero-title--bottom {
@@ -109,6 +192,17 @@
   bottom: 15px;
   font-size: 14px;
   text-transform: uppercase;
+
+  @include tablets {
+    top: 61px;
+    right: 64px;
+    bottom: inherit;
+    left: inherit;
+  }
+
+  @include phones {
+    right: 12px;
+  }
 }
 
 .sliger__img {
@@ -123,6 +217,17 @@
   left: 0;
   bottom: 35px;
   fill:rgba(255,255,255,.5);
+
+  @include tablets {
+    top: 0;
+    right: 52px;
+    bottom: inherit;
+    left: inherit;
+  }
+
+  @include phones {
+    right: 0;
+  }
 }
 
 .slider__desc {
@@ -130,6 +235,15 @@
   font-size: 14px;
   font-weight: 300;
   color: #fff;
+
+  @include tablets {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .slider__order {
@@ -137,16 +251,45 @@
   flex-direction: row;
   padding: 10px 0;
   width: 100%;
+
+  @include tablets {
+    justify-content: flex-end;
+    padding: 3px 0;
+  }
+
+  @include phones {
+    justify-content: flex-end;
+    padding: 6px 0;
+  }
 }
 
 .slider__order-block {
   width: 50%;
+
+  @include tablets {
+    text-align: right;
+    width: 43%;
+  }
+
+  @include phones {
+    text-align: right;
+    width: 47%;
+  }
 }
 
 .slider__order-block--btn {
   padding-bottom: 19px;
   display: flex;
   align-items: flex-end;
+
+  @include tablets {
+    justify-content: flex-start;
+    padding-left: 28px;
+  }
+
+  @include phones {
+    padding-bottom: 12px;
+  }
 }
 
 .slider__order-text {
@@ -156,8 +299,16 @@
 
 .slider__order-text--big {
   font-size: 72px;
+
+  @include phones {
+    font-size: 50px;
+  }
 }
 
 .slider__order-text--little {
   font-size: 30px;
+
+  @include phones {
+    font-size: 24px;
+  }
 }
