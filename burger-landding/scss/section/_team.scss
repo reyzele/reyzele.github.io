@@ -54,9 +54,7 @@
 }
 
 .team-acco__item--active {
-  transition: all 1s;
   height: auto;
-  opacity: 1;
   .team-acco__tr {
   color: $yellow;
 
@@ -105,7 +103,7 @@
   width: 100%;
   flex-flow: row nowrap;
   display: flex;
-  transition: all 1s;
+  transition: all .5s;
 
   @include tablets {
     flex-flow: column wrap;

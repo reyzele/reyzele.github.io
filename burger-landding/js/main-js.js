@@ -21,15 +21,28 @@ jQuery(document).ready(function (e) {
       scrollTop: $(this.hash).offset().top
     }, 1e3)
   })
-  $(".menu__item").click(function (menu) {
-    menu.preventDefault();
-    $(".menu__item").removeClass('menu__item_active');
-    $(this).addClass('menu__item_active');
+  $(".menu__item").click(function (rewiev_aco) {
+    if ($(this).hasClass("menu__item_active")) {
+      rewiev_aco.preventDefault();
+      $(".menu__item").removeClass("menu__item_active");
+    }
+    else {
+      rewiev_aco.preventDefault();
+      $(".menu__item").removeClass("menu__item_active");
+      $(this).addClass("menu__item_active");
+    }
   })
-  $(".team-acco__item").click(function (team) {
-    team.preventDefault();
-    $(".team-acco__item").removeClass('team-acco__item--active');
-    $(this).addClass('team-acco__item--active');
+  
+  $(".team-acco__item").click(function (team_aco) {
+    if ($(this).hasClass("team-acco__item--active")) {
+      team_aco.preventDefault();
+      $(".team-acco__item").removeClass("team-acco__item--active");
+    }
+    else {
+      team_aco.preventDefault();
+      $(".team-acco__item").removeClass("team-acco__item--active");
+      $(this).addClass("team-acco__item--active");
+    }
   })
 
 });

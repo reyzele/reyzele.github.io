@@ -323,7 +323,7 @@ input:focus, textarea:focus {
 
 .slider {
   display: flex;
-  background: url("../img/bg/slider-bg.jpg") center center no-repeat;
+  background: linear-gradient(#f8b43a, #ea8e37, #f8b43a);
   background-size: cover; }
 
 .slider__container {
@@ -622,9 +622,7 @@ input:focus, textarea:focus {
       margin-bottom: 20px; } }
 
 .team-acco__item--active {
-  transition: all 1s;
-  height: auto;
-  opacity: 1; }
+  height: auto; }
   .team-acco__item--active .team-acco__tr {
     color: #f8b43a; }
     .team-acco__item--active .team-acco__tr:before {
@@ -664,7 +662,7 @@ input:focus, textarea:focus {
   width: 100%;
   flex-flow: row nowrap;
   display: flex;
-  transition: all 1s; }
+  transition: all .5s; }
   @media screen and (max-width: 768px) {
     .team-acco__content {
       flex-flow: column wrap; } }
