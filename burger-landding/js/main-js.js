@@ -8,6 +8,12 @@ jQuery(document).ready(function (e) {
     close.preventDefault();
     $(".overlay-menu").css("display", "none");
   })
+  $(window).resize(function () {
+    let tablets = 768;
+    if ($(window).width() > tablets) {
+      $(".overlay-menu").css("display", "none");
+    }
+  });
 
   $(".scroll").click(function (onclick) {
     onclick.preventDefault();
@@ -25,6 +31,7 @@ jQuery(document).ready(function (e) {
     $(".team-acco__item").removeClass('team-acco__item--active');
     $(this).addClass('team-acco__item--active');
   })
+
 });
 
 
