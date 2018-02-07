@@ -6,7 +6,7 @@
   flex-direction: column;
 
   @include tablets {
-    margin-bottom: rem(152px);
+    margin-bottom: rem(150px);
   }
 
   @include phones {
@@ -42,7 +42,7 @@
 .best__item {
   display: flex;
   flex-direction: column;
-  width: 31.8%;
+  width: 31%;
 
   @include phones {
     flex-direction: row;
@@ -62,21 +62,21 @@
     }
 
   &_meat {
-    background-position: 32px 30px;
+    background-position: 41px 30px;
 
     @include phones {
       background-position: 0 0;
     }
   }
   &_hand {
-    background-position: -157px 30px;
+    background-position: -151px 30px;
 
     @include phones {
       background-position: -191px 0;
     }
   }
   &_natural {
-    background-position: -364px 33px;
+    background-position: -363px 33px;
 
     @include phones {
       background-position: -399px 0;

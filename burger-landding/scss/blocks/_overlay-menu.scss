@@ -14,11 +14,11 @@
     align-items: center;
     z-index: 999999;
     flex-direction: column;
-    padding: 14px 27px;
+    padding: 13px 3.5%;
   }
 
   @include phones {
-    padding: 12px 19px;
+    padding: 13px 4%;
   }
 
 }

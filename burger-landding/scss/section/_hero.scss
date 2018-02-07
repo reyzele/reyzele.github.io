@@ -63,7 +63,7 @@
 
 .hero__desc {
   padding-left: rem(4px);
-  margin-top: rem(57px);
+  margin-top: rem(56px);
   
   @include tablets {
     margin-top: rem(11px);
@@ -71,7 +71,7 @@
   }
 
   @include phones {
-    margin-top: 23px;
+    margin-top: 21px;
   }
 }
 
