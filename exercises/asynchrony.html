@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>asynchrony</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <button onclick="loadNames()" id="button">Нажать!</button>
+
+  <script>
+    // Задание 1,2
+    function delay(a) {
+      var promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("result");
+        }, a * 1000);
+
+      });
+      return promise;
+    }
+
+    delay(3)
+      .then(function () {
+        console.log('Прошло 3 секунды')
+
+        return delay(3);
+      })
+      .then(function () {
+        console.log('Прошло еще 3 секунды')
+
+        return delay(3);
+      })
+      .then(function () {
+        console.log('И еще прошло 3 секунды')
+      });
+
+    // Задание 3
+
+    function loadNames() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json', true);
+      xhr.send();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState != 4) return;
+        var Names = JSON.parse(xhr.responseText);
+        showNames(Names);
+      }
+
+      button.innerHTML = 'Загрузка...';
+      button.disabled = true;
+    }
+
+    function showNames(Names) {
+
+      Names.forEach(function (name) {
+        console.log(name.name);
+      });
+
+    }
+  </script>
+</body>
+
+</html>

@@ -98,6 +98,12 @@
     margin-bottom: rem(20px);
     font-family: 'gagalin', Arial, Helvetica, sans-serif;
     font-size: rem(14px);
+    
+    @include phones {
+      font-size: 24px;
+      text-align: center;
+    }
+
 }
 
 .reviews__item-text {
@@ -109,10 +115,18 @@
     @include tablets {
         text-align: center;
     }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .reviews__item-footer {
     margin-top: rem(13px);
+
+    @include phones {
+        text-align: center;
+    }
 }
 
 .reviews__btn {
@@ -129,5 +143,10 @@
     background-color: $dark;
     &:hover {
         background-color: darken($dark, 7%);
+    }
+
+    @include phones {
+      width: 127px;
+      content: "Читать отзыв";  
     }
 }

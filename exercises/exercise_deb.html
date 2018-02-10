@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function filter(input, than) {
+      var new_array = [];
+      if (input.length == 0) {
+        throw new Error('Пустой массив');
+      }
+      for (i = 0; i < input.length; i++) {
+        if (isNaN(input[i]) || !(isFinite(input[i]))){
+          throw new Error('Не число');
+        }
+        else if (input[i] < 0) {
+          throw new Error('Отрицательное число');
+        }
+        else if (input[i] > than) {
+          new_array.push(input[i]);
+        }
+      }
+      return new_array;
+    }
+    try {
+      var array = [12, 100, 34, 65, 10];
+      var result = filter(array, 60);
+
+      console.log(result); // [100, 65];
+
+      result = filter(array, 20);
+      console.log(result); // [100, 34, 65];
+
+    } catch(e) {
+      console.log(e.message);
+    }
+  </script>
+</body>
+
+</html>
