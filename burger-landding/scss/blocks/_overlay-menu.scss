@@ -24,19 +24,9 @@
 }
 
 .overlay-menu__header {
+  justify-content: space-between;
   display: flex;
   width: 100%;
-}
-
-.overlay-menu__close-link {
-  align-items: center;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.overlay-menu__close-img {
-
 }
 
 .overlay-menu__content {

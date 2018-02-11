@@ -132,21 +132,82 @@
 .reviews__btn {
     color: #fff;
     display: block;
-    font-size: rem(13px);
+    font-size: 13px;
     font-weight: 500;
-    line-height: rem(35px);
+    line-height: 35px;
     text-align: center;
     text-transform: uppercase;
-    width: rem(110px);
-    height: rem(35px);
-    border-radius: rem(4px);
+    width: 110px;
+    height: 35px;
+    border-radius: 4px;
     background-color: $dark;
+
     &:hover {
         background-color: darken($dark, 7%);
     }
 
-    @include phones {
-      width: 127px;
-      content: "Читать отзыв";  
+    &:after {
+        content: "Подробнее";
+        width: 100%;
+        height: 100%;
+
+        @include phones {
+            content: "Читать отзыв";
+        }
     }
+
+    @include phones {
+            width: 127px;
+        }
+}
+
+.reviews__overlay {
+    background-color: rgba(47, 50, 52, .92);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews__overlay-window {
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    padding: 20px;
+
+    @include tablets {
+        width: 480px;
+    }
+
+    @include phones {
+        width: 96%;
+        padding: 5% 4%;
+    }
+}
+
+.reviews__overlay-header {
+    margin-bottom: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.reviews__overlay-title {
+    color: $dark;
+    font-family: 'gagalin', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.reviews__overlay-text {
+    line-height: 24px;
+    width: 100%;
+    color: $dark;
+    font-weight: 300;
 }

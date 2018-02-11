@@ -15,10 +15,33 @@
   right: 0;
   top: 0;
   bottom: 0;
+
+  @include phones {
+    justify-content: flex-end;
+    left: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .menu__item {
   display: flex;
+
+  &_active {
+
+    @include phones {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+  }
 
   &_active .menu__acco-text {
     max-width: rem(540px);
@@ -27,10 +50,43 @@
     @include tablets {
       max-width: rem(588px);
     }
+
+    @include phones {
+      width: 90%;
+    }
   }
   &_active .menu__acco-title {
     color: $yellow;
+
+    @include phones {
+    min-width: auto;
+    width: 10%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
+  }
+
+  &_active .menu__acco-content {
+
+    @include phones {
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: flex-end;
+    }
+  }
+
+  &_active .menu__item {
+    @include phones {
+      width: 88%;
+    }
+  }
+
 }
 
 .menu__acco-content {
@@ -45,10 +101,16 @@
   font-size: rem(40px);
   color: #fff;
   background-size: cover;
+  overflow: hidden;
 
   @include tablets {
     width: rem(60px);
     min-width: rem(60px);
+  }
+
+  @include phones {
+    width: 12%;
+    min-width: 49px;
   }
 
   &_m {
@@ -98,4 +160,13 @@
   color: #fff;
   line-height: rem(26px);
   transition: all 1s;
+}
+
+.menu__acco-close {
+  display: none;
+
+  @include phones {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
