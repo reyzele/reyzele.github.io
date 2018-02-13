@@ -11,7 +11,7 @@ $(document).ready(function (e) {
     $(".overlay-menu").css("display", "none");
   })
 
-  var tablets = 768;
+  var tablets = (768 + 18);
   $(window).resize(function () {
     if ($(window).width() > tablets) {
       $(".overlay-menu").css("display", "none");
@@ -19,7 +19,7 @@ $(document).ready(function (e) {
   });
 
 //Section Slider open & close composition
-  if ($(window).width() < tablets) {  
+  if ($(window).width() <= tablets) {  
     $(".slider__menu-btn").click(function (open_menu) {
       open_menu.preventDefault();
       $(this).css("background-color", "#e25028");
@@ -32,6 +32,7 @@ $(document).ready(function (e) {
       $(".slider__menu-btn").css("background-color", "#f08c33");
     })
   }
+
   $(".scroll").click(function (onclick) {
     onclick.preventDefault();
     $("html,body").animate({

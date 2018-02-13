@@ -21,6 +21,22 @@
 .slider-wrap {
   width: 940px;
   margin: 0 30px;
+
+  @include slider1020 {
+    width: 768px;
+  }
+
+  @include slider863 {
+    width: 690px;
+  }
+
+  @include tablets {
+    width: 768px;
+  }
+
+  @include phones {
+    width: 480px;
+  }
 }
 
 .slider__outer {
@@ -32,24 +48,48 @@
   width: 3760px;
   display: flex;
   position: relative;
-  transition: all 1s;
+  transition: transform 1s;
+
+  @include slider1020 {
+    width: 3072px;
+  }
+
+  @include slider863 {
+    width: 2760px;
+  }
+
+  @include tablets {
+    width: 3072px;
+  }
+
+  @include phones {
+    width: 1920px;
+  }
 }
 
 .slider__item {
   width: 940px;
   position: relative;
 
+  @include slider1020 {
+    width: 768px;
+    position: initial;
+  }
+
   @include tablets {
-  display: flex;
-  justify-content: center;
+    width: 768px;
+    display: flex;
+    justify-content: center;
   }
 
   @include phones {
-  position: initial;
+    width: 480px;
+    position: initial;
   }
 }
 
 .slider__side {
+  z-index: 100;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -59,11 +99,7 @@
   left: -7px;
 
   @include tablets {
-  left: 38px;
-  }
-
-  @include phones {
-  left: 0;
+    left: 0;
   }
 }
 
@@ -71,10 +107,6 @@
   right: -7px;
 
   @include tablets {
-  right: 38px;
-  }
-
-  @include phones {
   right: 0;
   }
 }
@@ -111,7 +143,7 @@
   }
 
   @include phones {
-    width: 100%;
+    width: 92%;
   }
 }
 
@@ -140,7 +172,6 @@
   }
 
   @include phones {
-    padding: 0;
   }
 }
 
@@ -194,6 +225,7 @@
 }
 
 .slider-compos {
+  z-index: 1000;
   top: 0;
   left: 90px;
   position: absolute;
@@ -297,6 +329,14 @@
 
 .slider__hero {
   padding: 17% 0;
+
+  @include slider1020 {
+    padding: 22% 0;
+  }
+
+  @include slider863 {
+    padding: 27% 0;
+  }
 
   @include tablets {
     padding: 75px 0 0 0;
@@ -402,8 +442,7 @@
   }
 
   @include phones {
-    justify-content: flex-end;
-    padding: 6px 0;
+    padding: 0;
   }
 }
 
@@ -426,13 +465,36 @@
   display: flex;
   align-items: flex-end;
 
+  @include slider1020 {
+    width: 40%;
+  }
+
   @include tablets {
     justify-content: flex-start;
     padding-left: 28px;
+    width: 43%;
   }
 
   @include phones {
-    padding-bottom: 12px;
+    width: 47%;
+    padding-bottom: 13px;
+    padding-left: 28px;
+  }
+}
+
+.slider__order-block--price {
+
+  @include slider1020 {
+    width: 100%;
+  }
+
+  @include tablets {
+    width: 50%;
+  }
+
+  @include phones {
+    width: 50%;
+    padding-top: 8px;
   }
 }
 
