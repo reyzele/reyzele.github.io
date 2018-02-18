@@ -11,15 +11,9 @@ $(document).ready(function (e) {
     $(".overlay-menu").css("display", "none");
   })
 
-  var tablets = (768 + 18);
-  $(window).resize(function () {
-    if ($(window).width() > tablets) {
-      $(".overlay-menu").css("display", "none");
-    }
-  });
+  var tablets = 768;
 
-//Section Slider open & close composition
-  if ($(window).width() <= tablets) {  
+  if ($(window).width() <= tablets) {
     $(".slider__menu-btn").click(function (open_menu) {
       open_menu.preventDefault();
       $(this).css("background-color", "#e25028");
@@ -33,12 +27,36 @@ $(document).ready(function (e) {
     })
   }
 
-  $(".scroll").click(function (onclick) {
-    onclick.preventDefault();
-    $("html,body").animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1e3)
-  })
+
+  $(window).resize(function () {
+
+    if ($(window).width() <= tablets) {
+      $(".slider__menu-btn").click(function (open_menu) {
+        open_menu.preventDefault();
+        $(this).css("background-color", "#e25028");
+        $(".slider-compos").css("opacity", "1");
+      })
+
+      $(".close-link_compos").click(function (close_menu) {
+        close_menu.preventDefault();
+        $(".slider-compos").css("opacity", "0");
+        $(".slider__menu-btn").css("background-color", "#f08c33");
+      })
+    }
+
+
+    if ($(window).width() > tablets) {
+      $(".overlay-menu").css("display", "none");
+      $(".slider-compos").css("opacity", "");
+      $(".slider__menu-btn").css("background-color", "");
+
+      $(".slider__menu-btn").click(function (open_menu) {
+        $(".overlay-menu").css("display", "none");
+        $(".slider-compos").css("opacity", "");
+        $(".slider__menu-btn").css("background-color", "");
+      })
+    }
+  });
 
   //Section menu
   $(".menu__item").click(function (rewiev_aco_tr) {
@@ -76,6 +94,77 @@ $(document).ready(function (e) {
     reviews__overlay_close.preventDefault();
     $(".reviews__overlay").css("display", "none");
   })
+
+  
+
+
+
+  $(document).ready(function () {
+    $('#fullpage').fullpage({
+      //Навигация
+      menu: '#menu',
+      lockAnchors: true,
+      anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+      lockAnchors: true,
+      navigation: true,
+      navigationPosition: 'right',
+      showActiveTooltip: true,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
+      scrollOverflow: true,
+
+      dragAndMove: true,
+
+
+      //Скроллинг
+      css3: true,
+      scrollingSpeed: 700,
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 1000,
+      scrollBar: false,
+      easing: 'easeInOutCubic',
+      easingcss3: 'ease',
+      loopBottom: false,
+      loopTop: false,
+      loopHorizontal: true,
+      continuousVertical: false,
+      continuousHorizontal: false,
+      scrollHorizontally: false,
+      interlockedSlides: false,
+      dragAndMove: false,
+      offsetSections: false,
+      resetSliders: false,
+      fadingEffect: false,
+      normalScrollElements: '#element1, .element2',
+      scrollOverflow: false,
+      scrollOverflowReset: false,
+      scrollOverflowOptions: null,
+      touchSensitivity: 15,
+      normalScrollElementTouchThreshold: 5,
+      bigSectionsDestination: null,
+    });
+  });
+
+  $('.owl-carousel').owlCarousel({
+
+    items: 1,
+    loop: true,
+    dots: false,
+  });
+
+  var owl = $('.owl-carousel');
+  owl.owlCarousel();
+  // Go to the next item
+  $('.customNextBtn').click(function () {
+    owl.trigger('next.owl.carousel');
+  })
+  // Go to the previous item
+  $('.customPrevBtn').click(function () {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel', [300]);
+  });
 });
 
 

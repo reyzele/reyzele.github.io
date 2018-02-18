@@ -54,26 +54,21 @@ ul {
 
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .maincontent {
-  height: 100%;
-  min-height: 40.625rem; }
+  min-height: 650px;
+  height: 100%; }
 
 .section {
   position: relative;
-  height: 100vh;
-  min-height: 40.625rem;
+  height: 100%;
   overflow: hidden; }
-  @media screen and (max-width: 768px) {
-    .section {
-      min-height: 64rem; } }
-  @media screen and (max-width: 480px) {
-    .section {
-      min-height: 800px; } }
 
 .container {
   max-width: 940px;
+  height: 100%;
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     .container {
@@ -112,44 +107,42 @@ textarea, input {
 input:focus, textarea:focus {
   border: 0.125rem solid #f8b43a; }
 
-.pagination {
-  transform: translateY(-50%);
-  z-index: 10;
+#fp-nav {
   position: fixed;
+  z-index: 100;
+  top: 50%;
   right: 3%;
-  top: 50%; }
-  @media screen and (max-width: 768px) {
-    .pagination {
-      display: none; } }
+  opacity: 1;
+  transform: translateY(-50%); }
 
-.pagination__list {
+#fp-nav ul {
   display: flex;
   flex-direction: column; }
 
-.pagination__item {
+#fp-nav li {
   display: flex;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 5px;
   list-style: none; }
 
-.pagination__link {
-  border: 0.0625rem solid transparent;
+#fp-nav a {
+  border: 1px solid transparent;
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   border-radius: 10em; }
 
-.pagination__elipse {
+#fp-nav a:hover {
+  box-sizing: border-box;
+  border: 1px solid #fff; }
+
+#fp-nav span {
   margin: auto;
   display: block;
-  width: 0.375rem;
-  height: 0.375rem;
+  width: 6px;
+  height: 6px;
   background-color: #fff;
   border-radius: 50%;
-  margin-top: 0.25rem; }
-
-.pagination__link:hover {
-  box-sizing: border-box;
-  border: 0.0625rem solid #fff; }
+  margin-top: 4px; }
 
 .hero {
   background-image: url("../img/bg/hero-bg.png");
@@ -159,7 +152,6 @@ input:focus, textarea:focus {
   background-position: center center; }
 
 .hero__container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,14 +332,13 @@ input:focus, textarea:focus {
       padding: 0; } }
 
 .slider-wrap {
-  width: 940px;
-  margin: 0 30px; }
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 940px; }
   @media screen and (max-width: 1020px) {
     .slider-wrap {
       width: 768px; } }
-  @media screen and (max-width: 863px) {
-    .slider-wrap {
-      width: 690px; } }
   @media screen and (max-width: 768px) {
     .slider-wrap {
       width: 768px; } }
@@ -360,22 +351,8 @@ input:focus, textarea:focus {
   overflow: hidden; }
 
 .slider__list {
-  width: 3760px;
   display: flex;
-  position: relative;
-  transition: transform 1s; }
-  @media screen and (max-width: 1020px) {
-    .slider__list {
-      width: 3072px; } }
-  @media screen and (max-width: 863px) {
-    .slider__list {
-      width: 2760px; } }
-  @media screen and (max-width: 768px) {
-    .slider__list {
-      width: 3072px; } }
-  @media screen and (max-width: 480px) {
-    .slider__list {
-      width: 1920px; } }
+  position: relative; }
 
 .slider__item {
   width: 940px;
@@ -418,7 +395,8 @@ input:focus, textarea:focus {
 .slider__arrow {
   fill: #fff;
   width: 27px;
-  height: 14px; }
+  height: 14px;
+  cursor: pointer; }
   .slider__arrow-left {
     transform: rotate(90deg); }
   .slider__arrow-right {
@@ -576,9 +554,6 @@ input:focus, textarea:focus {
   @media screen and (max-width: 1020px) {
     .slider__hero {
       padding: 22% 0; } }
-  @media screen and (max-width: 863px) {
-    .slider__hero {
-      padding: 27% 0; } }
   @media screen and (max-width: 768px) {
     .slider__hero {
       padding: 75px 0 0 0; } }
@@ -725,6 +700,10 @@ input:focus, textarea:focus {
   @media screen and (max-width: 480px) {
     .slider__order-text--little {
       font-size: 24px; } }
+
+.owl-carousel .owl-stage {
+  align-items: center;
+  display: flex; }
 
 .team {
   background: url("../img/bg/team-bg.jpg") center center no-repeat;
@@ -1198,7 +1177,8 @@ input:focus, textarea:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .order__container {
       margin-bottom: 7.4375rem; } }
