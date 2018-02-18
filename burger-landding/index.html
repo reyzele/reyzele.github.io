@@ -20,7 +20,7 @@
     <div id="fullpage" class="maincontent">
 
       <!--Section HERO-->
-      <section id="hero" class="section hero active" data-anchor="page1">
+      <section class="section hero active" data-anchor="hero">
         <div class="container hero__container">
           <header class="header">
             <div class="header__logo">
@@ -32,16 +32,16 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#page1" class="nav__link scroll"> о нас</a>
+                    <a href="#hero" class="nav__link scroll"> о нас</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#page2" class="nav__link scroll"> бургеры</a>
+                    <a href="#slider" class="nav__link scroll"> бургеры</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#page3" class="nav__link scroll"> команда</a>
+                    <a href="#team" class="nav__link scroll"> команда</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#page4" class="nav__link scroll"> меню</a>
+                    <a href="#menu" class="nav__link scroll"> меню</a>
                   </li>
                   <li class="nav__item">
                     <a href="#reviews" class="nav__link scroll"> отзывы</a>
@@ -75,7 +75,7 @@
       </section>
 
       <!--Section BEST-->
-      <section id="best" class="section best" data-anchor="page2">
+      <section class="section best" data-anchor="best">
         <div class="container best__container">
           <h2 class="section-title section-title--best"> Мы лучшие</h2>
           <ul class="best__list">
@@ -130,7 +130,7 @@
       </section>
 
       <!--Section SLIDER-->
-      <section id="slider" class="section slider" data-anchor="slider">
+      <section class="section slider" data-anchor="slider">
         <div class="container slider__container">
           <div class="slider-wrap">
             <div class="slider__side slider__side--left customPrevBtn">
@@ -620,7 +620,7 @@
       </section>
 
       <!--Section TEAM-->
-      <section id="team" class="section team" data-anchor="page4">
+      <section class="section team" data-anchor="team">
         <div class="team__container">
           <div class="team__content">
             <h2 class="section-title section-title--team">Команда</h2>
@@ -698,13 +698,12 @@
                 </div>
               </li>
             </ul>
-
           </div>
         </div>
       </section>
 
       <!--Section MENU-->
-      <section id="m-menu" class="section menu" data-anchor="page5">
+      <section class="section menu" data-anchor="menu">
         <div class="container">
           <h2 class="section-title section-title--menu">Меню</h2>
           <ul class="menu__acco">
@@ -779,7 +778,7 @@
       </section>
 
       <!--Section REVIEWS-->
-      <section id="'reviews'" class="section reviews" data-anchor="page6">
+      <section class="section reviews" data-anchor="reviews">
         <ul class="reviews__list">
           <li class="reviews__item reviews__item-photo1">
             <div class="reviews__item-content">
@@ -909,32 +908,10 @@
             </div>
           </li>
         </ul>
-
-        <!--Review overlay-->
-        <div class="reviews__overlay">
-          <div class="reviews__overlay-window">
-            <div class="reviews__overlay-header">
-              <div class="reviews__overlay-title">
-                константин спилберг
-              </div>
-              <a href="#" class="reviews__overlay-close">
-                <img src="./img/content/close-red.png" alt="Close" class="close-link__img">
-              </a>
-            </div>
-            <div class="reviews__overlay-text">
-              <p>
-                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-                мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя
-                устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной,
-                а сыр таким расплавленным.
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!--Section ORDER-->
-      <section id="order" class="section order" data-anchor="page7">
+      <section class="section order" data-anchor="order">
         <div class="container order__container">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
           <div class="form">
@@ -1018,7 +995,7 @@
       </section>
 
       <!--Section MAP-->
-      <section id="map" class="section map" data-anchor="page8">
+      <section class="section map" data-anchor="map">
         <div class="map__container">
           <div class="map__pic">
             .
@@ -1098,6 +1075,30 @@
       </div>
     </div>
   </div>
+
+  <!--Review overlay-->
+  <div class="reviews__overlay">
+    <div class="reviews__overlay-window">
+      <div class="reviews__overlay-header">
+        <div class="reviews__overlay-title">
+          константин спилберг
+        </div>
+        <a href="#" class="reviews__overlay-close">
+          <img src="./img/content/close-red.png" alt="Close" class="close-link__img">
+        </a>
+      </div>
+      <div class="reviews__overlay-text">
+        <p>
+          Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+          мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
+          невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+          расплавленным.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./js/jquery.fullPage.js"></script>
   <script src="./js/owl.carousel.js"></script>

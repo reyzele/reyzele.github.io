@@ -21,3 +21,15 @@
     @content;
   }
 }
+
+@mixin slider575 {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin slider420 {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}

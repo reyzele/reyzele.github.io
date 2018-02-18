@@ -19,15 +19,13 @@
 }
 
 .slider-wrap {
-  width: 940px;
-  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 940px;
 
   @include slider1020 {
     width: 768px;
-  }
-
-  @include slider863 {
-    width: 690px;
   }
 
   @include tablets {
@@ -45,26 +43,8 @@
 }
 
 .slider__list {
-  width: 3760px;
   display: flex;
   position: relative;
-  transition: transform 1s;
-
-  @include slider1020 {
-    width: 3072px;
-  }
-
-  @include slider863 {
-    width: 2760px;
-  }
-
-  @include tablets {
-    width: 3072px;
-  }
-
-  @include phones {
-    width: 1920px;
-  }
 }
 
 .slider__item {
@@ -119,6 +99,7 @@
   fill: #fff;
   width: 27px;
   height: 14px;
+  cursor: pointer;
 
   &-left {
     transform: rotate(90deg);
@@ -142,8 +123,16 @@
     position: relative;
   }
 
+  @include slider575 {
+    width: 60%;
+  }
+
   @include phones {
-    width: 92%;
+    width: 80%;
+  }
+
+  @include slider420 {
+    width: 63%;
   }
 }
 
@@ -334,9 +323,6 @@
     padding: 22% 0;
   }
 
-  @include slider863 {
-    padding: 27% 0;
-  }
 
   @include tablets {
     padding: 75px 0 0 0;
@@ -517,4 +503,9 @@
   @include phones {
     font-size: 24px;
   }
+}
+
+.owl-carousel .owl-stage {
+  align-items: center;
+  display: flex;
 }
