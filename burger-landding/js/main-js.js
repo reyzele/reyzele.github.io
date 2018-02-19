@@ -112,8 +112,9 @@ $(document).ready(function (e) {
 
 
       //Скроллинг
-      responsiveHeight: 400,
-      css3: false,
+      responsiveWidth: 768,
+      responsiveHeight: 650,
+      css3: true,
       scrollingSpeed: 900,
       autoScrolling: true,
       fitToSection: true,
