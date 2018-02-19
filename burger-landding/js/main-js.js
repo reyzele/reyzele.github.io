@@ -113,9 +113,9 @@ $(document).ready(function (e) {
 
       //Скроллинг
       responsiveHeight: 650,
-      css3: true,
+      css3: false,
       scrollingSpeed: 900,
-      autoScrolling: false,
+      autoScrolling: true,
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
@@ -132,7 +132,6 @@ $(document).ready(function (e) {
       offsetSections: false,
       resetSliders: false,
       fadingEffect: false,
-      normalScrollElements: '#element1, .element2',
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,
       bigSectionsDestination: null,
