@@ -116,7 +116,7 @@ input:focus, textarea:focus {
   transform: translateY(-50%); }
   @media screen and (max-width: 768px) {
     #fp-nav {
-      display: none; } }
+      display: none !important; } }
 
 #fp-nav ul {
   display: flex;
