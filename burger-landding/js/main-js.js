@@ -109,12 +109,10 @@ $(document).ready(function (e) {
       showActiveTooltip: true,
       slidesNavigation: false,
       slidesNavPosition: 'bottom',
-      scrollOverflow: true,
-
-      dragAndMove: true,
 
 
       //Скроллинг
+      responsiveHeight: 650,
       css3: true,
       scrollingSpeed: 700,
       autoScrolling: true,
@@ -135,12 +133,11 @@ $(document).ready(function (e) {
       resetSliders: false,
       fadingEffect: false,
       normalScrollElements: '#element1, .element2',
-      scrollOverflow: false,
-      scrollOverflowReset: false,
-      scrollOverflowOptions: null,
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,
       bigSectionsDestination: null,
+
+     
     });
   });
 
