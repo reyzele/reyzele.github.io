@@ -114,6 +114,9 @@ input:focus, textarea:focus {
   right: 3%;
   opacity: 1;
   transform: translateY(-50%); }
+  @media screen and (max-width: 768px) {
+    #fp-nav {
+      display: none; } }
 
 #fp-nav ul {
   display: flex;
@@ -1176,7 +1179,7 @@ input:focus, textarea:focus {
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .order__container {
-      margin-bottom: 7.4375rem; } }
+      margin-bottom: 0; } }
   @media screen and (max-width: 480px) {
     .order__container {
       padding: 1% 0;
