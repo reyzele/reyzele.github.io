@@ -1,25 +1,50 @@
 $(document).ready(function () {
-  $('#fullpage').fullpage({
-    //Навигация
-    menu: '#menu',
-    anchors: ['hero', 'best', 'slider', 'team', 'menu', 'reviews', 'order', 'map'],
-    navigation: true,
-    navigationPosition: 'right',
-    showActiveTooltip: true,
-    slidesNavigation: false,
-    slidesNavPosition: 'bottom',
+
+  if ($(window).width() <= 768) {
+    $('#fullpage').fullpage({
+      //Навигация
+      menu: '#menu',
+      anchors: ['hero', 'best', 'slider', 'team', 'menu', 'reviews', 'order', 'map'],
+      navigation: true,
+      navigationPosition: 'right',
+      showActiveTooltip: true,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
 
 
-    //Скроллинг
-    responsiveWidth: 480,
-    responsiveHeight: 650,
-    css3: false,
-    scrollingSpeed: 900,
-    autoScrolling: false,
-    fitToSection: false,
-    fitToSectionDelay: 1000,
+      //Скроллинг
+      responsiveWidth: 768,
+      responsiveHeight: 650,
+      autoScrolling: false,
+      css3: false,
+      scrollingSpeed: 900,
+      fitToSection: false,
+      fitToSectionDelay: 1000,
+    });
+  } else {
+    $('#fullpage').fullpage({
+      //Навигация
+      menu: '#menu',
+      anchors: ['hero', 'best', 'slider', 'team', 'menu', 'reviews', 'order', 'map'],
+      navigation: true,
+      navigationPosition: 'right',
+      showActiveTooltip: true,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
 
-  });
+
+      //Скроллинг
+      responsiveWidth: 768,
+      responsiveHeight: 650,
+      autoScrolling: true,
+      css3: false,
+      scrollingSpeed: 900,
+      fitToSection: false,
+      fitToSectionDelay: 1000,
+    });
+  }
+  
+
 });
 
 // Hamburger overlay-menu open

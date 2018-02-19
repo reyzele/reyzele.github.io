@@ -347,8 +347,11 @@ input:focus, textarea:focus {
       width: 480px; } }
 
 .slider__outer {
+  height: 100%;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
 
 .slider__list {
   display: flex;
@@ -1017,17 +1020,12 @@ input:focus, textarea:focus {
   filter: grayscale(100%);
   background-size: cover;
   overflow: hidden;
-  background-repeat: no-repeat;
   background-position: top center;
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .reviews__item {
       background-position: center center;
       flex: 0 0 50%; } }
-  @media screen and (max-width: 480px) {
-    .reviews__item {
-      flex: 0 0 50%;
-      height: 25%; } }
   .reviews__item-photo1 {
     background-image: url("../img/content/reviews/photo1.jpg"); }
   .reviews__item-photo2 {
