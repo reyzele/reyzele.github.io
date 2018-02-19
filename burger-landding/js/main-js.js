@@ -141,9 +141,15 @@ $(document).ready(function (e) {
     $(".reviews__overlay").css("display", "flex");
   })
 
+
   $(".reviews__overlay-close").click(function (reviews__overlay_close) {
     reviews__overlay_close.preventDefault();
     $(".reviews__overlay").css("display", "none");
+  })
+
+  $(".order__overlay-close").click(function (overlay_close) {
+    overlay_close.preventDefault();
+    $(".order__overlay").css("display", "none");
   })
 
 
@@ -166,6 +172,69 @@ $(document).ready(function (e) {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
   });
+
+  ymaps.ready(init);
+  var myMap,
+      myPlacemark1,
+      myPlacemark2,
+      myPlacemark3,
+      myPlacemark4;
+
+
+  function init() {
+    myMap = new ymaps.Map("map-m", {
+      center: [59.91502556, 30.48654800],
+      zoom: 10
+    });
+
+    myPlacemark1 = new ymaps.Placemark([59.91502556, 30.48654800], { hintContent: 'Mr.Burger на Товарищеском', balloonContentHeader: 'Mr.Burger на Товарищеском', 
+    balloonContentBody: 'Бургеры у нас - быстро, вкусно, сытно, ждем по адресу:',
+    balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27' 
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-3, -42]
+    });
+    myPlacemark2 = new ymaps.Placemark([59.94704056, 30.38503850], { hintContent: 'Mr.Burger на Тверской', balloonContentHeader: 'Mr.Burger на Тверской', 
+    balloonContentBody: 'Бургеры у нас - быстро, вкусно, сытно, ждем по адресу:',
+    balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-3, -42]
+    });
+    myPlacemark3 = new ymaps.Placemark([59.89125906, 30.31689200], { hintContent: 'Mr.Burger на Московском', balloonContentHeader: 'Mr.Burger на Московском', 
+    balloonContentBody: 'Бургеры у нас - быстро, вкусно, сытно, ждем по адресу:', 
+    balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-3, -42]
+    });
+    myPlacemark4 = new ymaps.Placemark([59.97356806, 30.31127750], { hintContent: 'Mr.Burger на Чапыгина', balloonContentHeader: 'Mr.Burger на Чапыгина', 
+    balloonContentBody: 'Бургеры у нас - быстро, вкусно, сытно, ждем по адресу:', 
+    balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-3, -42]
+    });
+
+
+    myMap.geoObjects
+      .add(myPlacemark1)
+      .add(myPlacemark2)
+      .add(myPlacemark3)
+      .add(myPlacemark4);
+
+    myMap.behaviors.disable('scrollZoom');
+  }
+  
+  
 });
 
 

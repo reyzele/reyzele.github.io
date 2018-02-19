@@ -11,6 +11,14 @@
   }
 }
 
+.order-link--hero {
+
+  @include tablets {
+    margin-right: 55px;
+  }
+  
+}
+
 .order-link__reset {
   margin-left: 5px;
   color: #fff;

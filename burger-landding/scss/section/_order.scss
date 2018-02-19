@@ -18,6 +18,51 @@
   }
 
   @include phones {
+    padding: 1% 0;
     margin: 0 auto;
+    height: 100%;
   }
+}
+
+.order__overlay {
+    background-color: rgba(47, 50, 52, .92);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order__overlay-window {
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 460px;
+    padding: 20px;
+
+    @include tablets {
+        width: 480px;
+    }
+
+    @include phones {
+        width: 96%;
+        padding: 5% 4%;
+    }
+}
+
+.order__overlay-header {
+    margin-bottom: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.order__success {
+
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Burger-Landding</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <link rel="stylesheet" href="./css/owl.carousel.css">
   <link rel="stylesheet" href="./css/jquery.fullPage.css">
   <link rel="stylesheet" href="./css/normalize.css">
@@ -44,16 +45,16 @@
                     <a href="#menu" class="nav__link scroll"> меню</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#reviews" class="nav__link scroll"> отзывы</a>
+                    <a href="#reviews" class="nav__link"> отзывы</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#map" class="nav__link scroll"> контакты</a>
+                    <a href="#map" class="nav__link"> контакты</a>
                   </li>
                 </ul>
               </nav>
             </div>
             <div class="header__links">
-              <a href="#order" class="order-link btn scroll"> Заказать</a>
+              <a href="#order" class="order-link order-link--hero btn"> Заказать</a>
               <a class="hamburger-menu-link" href="#">
                 <div class="hamburger-menu-link__bars"></div>
               </a>
@@ -915,77 +916,79 @@
         <div class="container order__container">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
           <div class="form">
-            <form action="form.php" class="form__elem">
+            <form action="form.php" method="post" id="order-form" class="form__elem">
               <div class="form__content">
                 <div class="form__content-block">
                   <div class="form__row">
-                    <label for="name" class="form__block">
+                    <label for="user-name" class="form__block">
                       <div class="form__block-title">Имя</div>
-                      <input id="name" type="text" class="form__input">
+                      <input id="user-name" name="user-name" type="text" class="form__input" required>
                     </label>
-                    <label class="form__block">
+                    <label for="user-tel" class="form__block">
                       <div class="form__block-title">Телефон</div>
-                      <input type="text" class="form__input">
+                      <input id="user-tel" name="user-tel" type="text" class="form__input" required>
                     </label>
                   </div>
                   <div class="form__row">
-                    <label class="form__block">
+                    <label for="user-street" class="form__block">
                       <div class="form__block-title">Улица</div>
-                      <input type="text" class="form__input">
+                      <input id="user-street" name="user-street" type="text" class="form__input">
                     </label>
                   </div>
                   <div class="form__row">
-                    <label class="form__block">
+                    <label for="user-house" class="form__block">
                       <div class="form__block-title">Дом</div>
-                      <input type="text" class="form__input">
+                      <input id="user-house" name="user-house" type="text" class="form__input">
                     </label>
-                    <label class="form__block">
+                    <label for="user-housing" class="form__block">
                       <div class="form__block-title">Корпус</div>
-                      <input type="text" class="form__input">
+                      <input id="user-housing" name="user-housing" type="text" class="form__input">
                     </label>
-                    <label class="form__block">
+                    <label for="user-apart" class="form__block">
                       <div class="form__block-title">Квартира</div>
-                      <input type="text" class="form__input">
+                      <input id="user-apart" name="user-apart" type="text" class="form__input">
                     </label>
-                    <label class="form__block form__block--floor">
+                    <label for="user-floor" class="form__block form__block--floor">
                       <div class="form__block-title">Этаж</div>
-                      <input type="text" class="form__input">
+                      <input id="user-floor" name="user-floor" type="text" class="form__input">
                     </label>
                   </div>
                 </div>
                 <div class="form__content-block">
                   <div class="form__row">
-                    <label class="form__block">
+                    <label for="message" class="form__block">
                       <div class="form__block-title">Комментарий</div>
-                      <textarea class="form__input form__input_txt"></textarea>
+                      <textarea id="message" name="message" class="form__input form__input_txt" required></textarea>
                     </label>
                   </div>
                   <div class="form__row">
-                    <label for="money" class="form__radio-trigger">
-                      <input type="radio" id="money" name="radio" class="visuallyhidden">
+                    <label for="pay-cash" class="form__radio-trigger">
+                      <input type="radio" id="pay-cash" name="pay-option" class="visuallyhidden" required>
                       <span class="form__radio-trigger_custom"></span>
                       <span class="form__radio-trigger_title">Потребуется сдача</span>
                     </label>
-                    <label for="card" class="form__radio-trigger">
-                      <input type="radio" id="card" name="radio" class="visuallyhidden">
+                    <label for="pay-card" class="form__radio-trigger">
+                      <input type="radio" id="pay-card" name="pay-option" class="visuallyhidden" required>
                       <span class="form__radio-trigger_custom"></span>
                       <span class="form__radio-trigger_title">Оплата по карте</span>
                     </label>
                   </div>
                   <div class="form__row">
-                    <label for="call" class="form__checkbox">
-                      <input type="checkbox" class="visuallyhidden" id="call">
+                    <label for="dont-disturb" class="form__checkbox">
+                      <input type="checkbox" class="visuallyhidden" id="dont-disturb" name="dont-disturb">
                       <span class="form__checkbox_custom"></span>
                       <span class="form__checkbox_title">Не перезванивать</span>
                     </label>
                   </div>
                   <div class="form__row form__row_btns">
-                    <div class="form__row-btn">
-                      <a href="#" class="order-link btn">Заказать</a>
-                    </div>
-                    <div class="form__row-btn">
-                      <a href="#" class="order-link__reset btn">Очистить</a>
-                    </div>
+                    <label for="send-btn" class="form__row-btn">
+                      <button id="send-btn" class="visuallyhidden" type="submit"></button>
+                      <a class="order-link btn">Заказать</a>
+                    </label>
+                    <label for="reset-btn" class="form__row-btn">
+                      <button id="reset-btn" class="visuallyhidden" type="reset"></button>
+                      <a class="order-link__reset btn">Очистить</a>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -997,8 +1000,7 @@
       <!--Section MAP-->
       <section class="section map" data-anchor="map">
         <div class="map__container">
-          <div class="map__pic">
-            .
+          <div id="map-m" class="map__pic">
           </div>
           <footer class="footer">
             <div class="footer__container">
@@ -1087,23 +1089,21 @@
         </a>
       </div>
       <div class="reviews__overlay-text">
-        <p>
-          Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-          мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
-          невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-          расплавленным.
-        </p>
+        
       </div>
     </div>
   </div>
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/common.js"></script>
   <script src="./js/main-js.js"></script>
   <script src="./js/jquery.fullPage.js"></script>
   <script src="./js/scrolloverflow.min.js"></script>
   <script src="./js/owl.carousel.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/common.js"></script>
+  
 </body>
 
 </html>

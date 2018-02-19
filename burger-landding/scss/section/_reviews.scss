@@ -18,16 +18,11 @@
     filter: grayscale(100%);
     background-size: cover;
     overflow: hidden;
-    background-repeat: no-repeat;
     background-position: top center;
     justify-content: center;
 
     @include tablets {
         background-position: center center;
-        flex: 0 0 50%;
-    }
-
-    @include tablets {
         flex: 0 0 50%;
         height: 25%;
     }
