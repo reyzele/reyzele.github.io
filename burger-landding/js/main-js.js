@@ -25,6 +25,8 @@ $(document).ready(function (e) {
       $(".slider-compos").css("opacity", "0");
       $(".slider__menu-btn").css("background-color", "#f08c33");
     })
+
+    $("html").removeClass("fp-enabled");
   }
 
 
@@ -112,11 +114,12 @@ $(document).ready(function (e) {
 
 
       //Скроллинг
-      responsiveWidth: 800,
+      responsiveWidth: 768,
+      responsiveHeight: 650,
       css3: true,
       scrollingSpeed: 900,
       autoScrolling: true,
-      fitToSection: true,
+      fitToSection: false,
       fitToSectionDelay: 1000,
       scrollBar: false,
       easing: 'easeInOutCubic',
