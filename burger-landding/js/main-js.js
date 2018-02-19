@@ -112,10 +112,10 @@ $(document).ready(function (e) {
 
 
       //Скроллинг
-      responsiveHeight: 600,
+      responsiveHeight: 650,
       css3: true,
       scrollingSpeed: 900,
-      autoScrolling: true,
+      autoScrolling: false,
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
