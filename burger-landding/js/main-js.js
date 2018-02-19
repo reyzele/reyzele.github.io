@@ -11,11 +11,11 @@ $(document).ready(function () {
 
 
     //Скроллинг
-    responsiveWidth: 768,
+    responsiveWidth: 480,
     responsiveHeight: 650,
-    css3: true,
+    css3: false,
     scrollingSpeed: 900,
-    autoScrolling: true,
+    autoScrolling: false,
     fitToSection: false,
     fitToSectionDelay: 1000,
 
