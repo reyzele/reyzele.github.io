@@ -15,7 +15,7 @@ $(document).ready(function () {
     responsiveHeight: 650,
     css3: true,
     scrollingSpeed: 900,
-    autoScrolling: false,
+    autoScrolling: true,
     fitToSection: false,
     fitToSectionDelay: 1000,
 

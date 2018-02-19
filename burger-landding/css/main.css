@@ -1024,7 +1024,7 @@ input:focus, textarea:focus {
     .reviews__item {
       background-position: center center;
       flex: 0 0 50%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .reviews__item {
       flex: 0 0 50%;
       height: 25%; } }
