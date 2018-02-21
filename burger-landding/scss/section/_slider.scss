@@ -7,7 +7,7 @@
 .slider__container {
   position: relative;
   overflow: hidden;
-  max-width: calc(940px + 60px);
+  max-width: rem(1000px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +22,18 @@
   display: flex;
   align-items: center;
   height: 100%;
-  max-width: 940px;
+  max-width: rem(940px);
 
   @include slider1020 {
-    width: 768px;
+    width: rem(768px);
   }
 
   @include tablets {
-    width: 768px;
+    width: rem(768px);
   }
 
   @include phones {
-    width: 480px;
+    width: rem(480px);
   }
 }
 
@@ -51,22 +51,22 @@
 }
 
 .slider__item {
-  width: 940px;
+  width: rem(940px);
   position: relative;
 
   @include slider1020 {
-    width: 768px;
+    width: rem(768px);
     position: initial;
   }
 
   @include tablets {
-    width: 768px;
+    width: rem(768px);
     display: flex;
     justify-content: center;
   }
 
   @include phones {
-    width: 480px;
+    width: rem(480px);
     position: initial;
   }
 }
@@ -79,7 +79,7 @@
 }
 
 .slider__side--left {
-  left: -7px;
+  left: rem(-7px);
 
   @include tablets {
     left: 0;
@@ -87,7 +87,7 @@
 }
 
 .slider__side--right {
-  right: -7px;
+  right: rem(-7px);
 
   @include tablets {
   right: 0;
@@ -100,8 +100,8 @@
 
 .slider__arrow {
   fill: #fff;
-  width: 27px;
-  height: 14px;
+  width: rem(27px);
+  height: rem(14px);
   cursor: pointer;
 
   &-left {
@@ -144,7 +144,7 @@
   position: relative;
 
   @include tablets {
-    margin-top: 2px;
+    margin-top: rem(2px);
     width: auto;
   }
 
@@ -170,11 +170,11 @@
 .slider__menu-btn {
   z-index: 10;
   position: absolute;
-  border-radius: 4px;
+  border-radius: rem(4px);
   left: 0;
   top: 0;
-  width: 90px;
-  height: 90px;
+  width: rem(90px);
+  height: rem(90px);
   background-color: #f08c33;
   display: flex;
   align-items: center;
@@ -204,38 +204,38 @@
 
 .slider__menu-svg {
   fill: #fff;
-  width: 46px;
-  height: 44px;
+  width: rem(46px);
+  height: rem(44px);
 }
 
 .slider__menu-title {
-  margin-top: 5px;
+  margin-top: rem(5px);
   color: #fff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: Gagalin;
-  margin-bottom: -7px;
+  margin-bottom: rem(-7px);
 }
 
 .slider-compos {
   z-index: 1000;
   top: 0;
-  left: 90px;
+  left: rem(90px);
   position: absolute;
   width: 59%;
-  border-radius: 4px;
+  border-radius: rem(4px);
   background-color: rgba(255,255,255,.9);
   opacity: 0;
   transition: .3s;
-  padding: 20px 21px;
+  padding: rem(20px) rem(21px);
 
   @include tablets {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     top: 0;
-    left: 90px;
-    padding: 13px 18px;
-    min-width: 245px;
+    left: rem(90px);
+    padding: rem(13px) rem(18px);
+    min-width: rem(245px);
   }
 }
 
@@ -246,11 +246,11 @@
 }
 
 .slider-compos__item {
-  margin-bottom: 7.5px;
+  margin-bottom: rem(7.5px);
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 14px;
+  font-size: rem(14px);
 
   &:last-child {
     margin-bottom: 0;
@@ -258,8 +258,8 @@
 }
 
 .slider-compos__img {
-  width: 43px;
-  height: 43px;
+  width: rem(43px);
+  height: rem(43px);
 
   &_beef {
     fill: $orange;
@@ -287,7 +287,7 @@
 }
 
 .slider-compos__title {
-  margin-left: 26px;
+  margin-left: rem(26px);
   font-weight: 500;
 }
 
@@ -302,7 +302,7 @@
 
   @include tablets {
     display: initial;
-    margin-left: 10px;
+    margin-left: rem(10px);
   }
 }
 
@@ -315,12 +315,12 @@
 
 
   @include tablets {
-    padding: 75px 0 0 0;
+    padding: rem(75px) 0 0 0;
   }
 
   @include phones {
     width: 84%;
-    padding: 100px 0 0 0;
+    padding: rem(100px) 0 0 0;
   }
 }
 
@@ -331,37 +331,37 @@
 }
 
 .slider__hero-title--top {
-  bottom: 27px;
-  font-size: 20px;
-  left: 14px;
+  bottom: rem(27px);
+  font-size: rem(20px);
+  left: rem(14px);
 
   @include tablets {
     bottom: inherit;
     left: inherit;
-    top: 25px;
-    right: 11px;
+    top: rem(25px);
+    right: rem(11px);
   }
 
    @include phones {
-    right: 12px;
+    right: rem(12px);
   }
 }
 
 .slider__hero-title--bottom {
-  left: 16px;
+  left: rem(16px);
   bottom: 0;
-  font-size: 14px;
+  font-size: rem(14px);
   text-transform: uppercase;
 
   @include tablets {
-    top: 61px;
-    right: 13px;
+    top: rem(61px);
+    right: rem(13px);
     bottom: inherit;
     left: inherit;
   }
 
   @include phones {
-    right: 12px;
+    right: rem(12px);
   }
 }
 
@@ -371,11 +371,11 @@
 }
 
 .slider__kkal-svg {
-  height: 60px;
-  width: 60px;
+  height: rem(60px);
+  width: rem(60px);
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: rem(20px);
   fill:rgba(255,255,255,.5);
 
   @include tablets {
@@ -391,14 +391,14 @@
 }
 
 .slider__desc {
-  line-height: 24px;
-  font-size: 14px;
+  line-height: rem(24px);
+  font-size: rem(14px);
   font-weight: 300;
   color: #fff;
 
   @include tablets {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: rem(16px);
   }
 
   @include phones {
@@ -409,12 +409,12 @@
 .slider__order {
   display: flex;
   flex-direction: row;
-  padding: 10px 0;
+  padding: rem(10px) 0;
   width: 100%;
 
   @include tablets {
     justify-content: flex-end;
-    padding: 3px 0;
+    padding: rem(3px) 0;
   }
 
   @include phones {
@@ -437,7 +437,7 @@
 }
 
 .slider__order-block--btn {
-  padding-bottom: 19px;
+  padding-bottom: rem(19px);
   display: flex;
   align-items: flex-end;
 
@@ -447,14 +447,14 @@
 
   @include tablets {
     justify-content: flex-start;
-    padding-left: 28px;
+    padding-left: rem(28px);
     width: 43%;
   }
 
   @include phones {
     width: 47%;
-    padding-bottom: 13px;
-    padding-left: 28px;
+    padding-bottom: rem(13px);
+    padding-left: rem(28px);
   }
 }
 
@@ -470,7 +470,7 @@
 
   @include phones {
     width: 50%;
-    padding-top: 8px;
+    padding-top: rem(8px);
   }
 }
 
@@ -480,18 +480,18 @@
 }
 
 .slider__order-text--big {
-  font-size: 72px;
+  font-size: rem(72px);
 
   @include phones {
-    font-size: 50px;
+    font-size: rem(50px);
   }
 }
 
 .slider__order-text--little {
-  font-size: 30px;
+  font-size: rem(30px);
 
   @include phones {
-    font-size: 24px;
+    font-size: rem(24px);
   }
 }
 

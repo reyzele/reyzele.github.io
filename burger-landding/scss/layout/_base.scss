@@ -1,10 +1,22 @@
 html {
+  @include px1020 {
+    font-size: 17px;
+  }
+
   @include tablets {
     font-size: 16px;
   }
 
+  @include tablets {
+    font-size: 15px;
+  }
+
   @include phones {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  @include px375 {
+    font-size: 12px;
   }
 }
 

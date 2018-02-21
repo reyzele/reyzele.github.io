@@ -1,7 +1,7 @@
 .social-sprite {
   fill: #595959;
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   transition: fill .5s;
   &:hover {
     fill: $orange;

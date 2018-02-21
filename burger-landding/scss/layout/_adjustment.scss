@@ -13,6 +13,13 @@
   min-height: 650px;
   position: relative;
   overflow: hidden;
+
+
+  @include phones {
+    width: 92%;
+    padding: 0;
+  }
+
 }
 
 .container {

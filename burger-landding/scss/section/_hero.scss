@@ -30,7 +30,7 @@
 
   @include phones {
     padding: 0;
-    margin-top: 28px;
+    margin-top: rem(28px);
   }
 }
 
@@ -70,7 +70,7 @@
   }
 
   @include phones {
-    margin-top: 21px;
+    margin-top: rem(21px);
   }
 }
 

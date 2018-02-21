@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: rem(16px);
   justify-content: center;
 
   @include tablets {
@@ -39,15 +39,15 @@
 
 .order__overlay-window {
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: rem(6px);
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 460px;
-    padding: 20px;
+    width: rem(460px);
+    padding: rem(20px);
 
     @include tablets {
-        width: 480px;
+        width: rem(480px);
     }
 
     @include phones {
@@ -57,7 +57,7 @@
 }
 
 .order__overlay-header {
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     display: flex;
     width: 100%;
     justify-content: flex-end;

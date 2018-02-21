@@ -5,9 +5,14 @@
 	align-items: center;
 	display: none;
 	right: 3.5%;
+	top: 35px;
 
   @include tablets() {
     display: flex;
+	}
+	
+	@include phones() {
+    top: 33px;
   }
 }
 

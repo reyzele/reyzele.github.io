@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-  if ($(window).width() <= 768) {
     $('#fullpage').fullpage({
       //Навигация
       menu: '#menu',
@@ -13,36 +11,13 @@ $(document).ready(function () {
 
 
       //Скроллинг
-      responsiveWidth: 768,
-      responsiveHeight: 650,
-      autoScrolling: false,
-      css3: false,
-      scrollingSpeed: 900,
-      fitToSection: false,
-      fitToSectionDelay: 1000,
-    });
-  } else {
-    $('#fullpage').fullpage({
-      //Навигация
-      menu: '#menu',
-      anchors: ['hero', 'best', 'slider', 'team', 'menu', 'reviews', 'order', 'map'],
-      navigation: true,
-      navigationPosition: 'right',
-      showActiveTooltip: true,
-      slidesNavigation: false,
-      slidesNavPosition: 'bottom',
-
-
-      //Скроллинг
-      responsiveWidth: 768,
-      responsiveHeight: 650,
       autoScrolling: true,
       css3: false,
       scrollingSpeed: 900,
       fitToSection: false,
       fitToSectionDelay: 1000,
     });
-  }
+
   
 
 });
@@ -184,7 +159,8 @@ $(document).ready(function (e) {
   function init() {
     myMap = new ymaps.Map("map-m", {
       center: [59.91502556, 30.48654800],
-      zoom: 10
+      zoom: 10,
+      
     });
 
     myPlacemark1 = new ymaps.Placemark([59.91502556, 30.48654800], { hintContent: 'Mr.Burger на Товарищеском', balloonContentHeader: 'Mr.Burger на Товарищеском', 

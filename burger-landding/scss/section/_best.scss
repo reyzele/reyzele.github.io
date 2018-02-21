@@ -10,7 +10,7 @@
   }
 
   @include phones {
-    margin-bottom: rem(56px);
+    margin-bottom: 0;
   }
 }
 
@@ -52,7 +52,7 @@
 
 .best__pic {
   width: 170px;
-  height: 150px;
+  height: rem(150px);
   background-image: url('../img/content/about-us-sprite.png');
   background-repeat: no-repeat;
   margin: auto;
@@ -97,17 +97,17 @@
 }
 
 .best__title {
-  line-height: 29px;
+  line-height: rem(29px);
   font-family: 'lifehack', Arial, Helvetica, sans-serif;
   font-weight: 500;
-  letter-spacing: -0.6px;
-  font-size: 24px;
+  letter-spacing: rem(-0.6px);
+  font-size: rem(24px);
 }
 
 .best__desc {
-  margin-top: 13px;
+  margin-top: rem(13px);
   opacity: .8;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
+  line-height: rem(24px);
 }

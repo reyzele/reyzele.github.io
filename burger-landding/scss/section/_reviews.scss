@@ -95,7 +95,7 @@
     font-size: rem(14px);
     
     @include phones {
-      font-size: 24px;
+      font-size: rem(24px);
       text-align: center;
     }
 
@@ -127,14 +127,14 @@
 .reviews__btn {
     color: #fff;
     display: block;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
-    line-height: 35px;
+    line-height: rem(35px);
     text-align: center;
     text-transform: uppercase;
-    width: 110px;
-    height: 35px;
-    border-radius: 4px;
+    width: rem(110px);
+    height: rem(35px);
+    border-radius: rem(4px);
     background-color: $dark;
 
     &:hover {
@@ -152,7 +152,7 @@
     }
 
     @include phones {
-            width: 127px;
+            width: rem(127px);
         }
 }
 
@@ -171,14 +171,14 @@
 
 .reviews__overlay-window {
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: rem(6px);
     display: flex;
     flex-direction: column;
-    width: 460px;
-    padding: 20px;
+    width: rem(460px);
+    padding: rem(20px);
 
     @include tablets {
-        width: 480px;
+        width: rem(480px);
     }
 
     @include phones {
@@ -188,7 +188,7 @@
 }
 
 .reviews__overlay-header {
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -201,7 +201,7 @@
 }
 
 .reviews__overlay-text {
-    line-height: 24px;
+    line-height: rem(24px);
     width: 100%;
     color: $dark;
     font-weight: 300;
