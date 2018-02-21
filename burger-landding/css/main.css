@@ -79,6 +79,7 @@ ul {
   overflow: hidden; }
   @media screen and (max-width: 480px) {
     .section {
+      min-height: 0;
       width: 92%;
       padding: 0; } }
 
