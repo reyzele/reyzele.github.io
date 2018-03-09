@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  function rere() {
     $('#fullpage').fullpage({
       //Навигация
       menu: '#menu',
@@ -11,14 +12,41 @@ $(document).ready(function () {
 
 
       //Скроллинг
+      autoScrolling: false,
+      css3: false,
+      scrollingSpeed: 900,
+      fitToSection: false,
+      fitToSectionDelay: 200,
+    });
+    
+  }
+
+  if ($(window).width() >= 768 && $(window).height() < 650) {
+    rere();
+  }
+
+  else {
+    $('#fullpage').fullpage({
+      //Навигация
+      menu: '#menu',
+      anchors: ['hero', 'best', 'slider', 'team', 'menu', 'reviews', 'order', 'map'],
+      navigation: true,
+      navigationPosition: 'right',
+      showActiveTooltip: true,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
+
+
+      //Скроллинг
+      responsiveHeight: 650,
       autoScrolling: true,
       css3: false,
       scrollingSpeed: 900,
       fitToSection: false,
-      fitToSectionDelay: 1000,
+      fitToSectionDelay: 200,
     });
+  }
 
-  
 
 });
 
@@ -168,7 +196,7 @@ $(document).ready(function (e) {
     balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27' 
     }, {
         iconLayout: 'default#image',
-        iconImageHref: 'http://reyzele.com/burger-landding/img/map-marker.png',
+        iconImageHref: 'http://burger-landding.reyzele.com/img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-3, -42]
     });
@@ -177,7 +205,7 @@ $(document).ready(function (e) {
     balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: 'http://reyzele.com/burger-landding/img/map-marker.png',
+        iconImageHref: 'http://burger-landding.reyzele.com/img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-3, -42]
     });
@@ -186,7 +214,7 @@ $(document).ready(function (e) {
     balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: 'http://reyzele.com/burger-landding/img/map-marker.png',
+        iconImageHref: 'http://burger-landding.reyzele.com/img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-3, -42]
     });
@@ -195,7 +223,7 @@ $(document).ready(function (e) {
     balloonContentFooter: 'Санкт-Петербург, Товарищеский проспект, 20/27'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: 'http://reyzele.com/burger-landding/img/map-marker.png',
+        iconImageHref: 'http://burger-landding.reyzele.com/img/map-marker.png',
         iconImageSize: [46, 57],
         iconImageOffset: [-3, -42]
     });

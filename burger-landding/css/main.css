@@ -194,14 +194,14 @@ input:focus, textarea:focus {
   padding-bottom: 16%; }
   @media screen and (max-width: 768px) {
     .hero__content {
-      margin-top: 3.625rem;
+      justify-content: center;
+      margin-top: -3.625rem;
       text-align: center;
       flex-direction: column;
       padding: 0 15%; } }
   @media screen and (max-width: 480px) {
     .hero__content {
-      padding: 0;
-      margin-top: 1.75rem; } }
+      padding: 0; } }
 
 .hero__img, .hero__desc {
   width: 50%; }
@@ -624,7 +624,7 @@ input:focus, textarea:focus {
       right: 0.75rem; } }
 
 .sliger__img {
-  max-width: 100%;
+  max-width: 450px;
   min-height: 100%; }
 
 .slider__kkal-svg {
@@ -1387,7 +1387,9 @@ input:focus, textarea:focus {
   margin-right: 0.875rem; }
   .nav__list {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap; }
 
 .nav__item {
   display: inline-block;
