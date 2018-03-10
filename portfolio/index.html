@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Добро пожаловать</title>
+    <title>Главная страница</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -11,20 +11,32 @@
     <script src="./assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Главная</h1>
-    <form>
-      <label for="email">email</label>
-      <input name="email" id="email">
-      <label for="password">password</label>
-      <input name="password" id="password">
-      <button>Войти</button>
-    </form>
-    <h2>Меню</h2>
-    <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="my-works.html">Мои работы</a></li>
-      <li><a href="blog.html">Блог</a></li>
-    </ul>
+    <div class="wrapper">   
+      <div class="main__content">
+        <header class="main__header"><a class="auth-btn btn" href="#">Авторизоваться</a></header>
+        <div class="main__block">
+          <div class="main__block-content">
+            <div class="avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="avatar__title">
+              <h2 class="avatar__title-name avatar__title-name_main">Владимир Астахов</h2>
+              <h3 class="avatar__title-desc">Личный сайт веб разработчика</h3>
+            </div>
+            <ul class="main__social-list">
+              <li class="main__social-item"><a class="main__social main__social-vk" href="#"></a></li>
+              <li class="main__social-item"><a class="main__social main__social-github" href="#"></a></li>
+              <li class="main__social-item"><a class="main__social main__social-in" href="#"></a></li>
+            </ul>
+          </div>
+          <ul class="main__nav-list">
+            <li class="main__nav-item"><a class="main__nav-link" href="works.html">Мои работы</a></li>
+            <li class="main__nav-item"><a class="main__nav-link" href="about.html">Обо мне </a></li>
+            <li class="main__nav-item"><a class="main__nav-link" href="blog.html">Блог</a></li>
+          </ul>
+        </div>
+        <footer class="main__footer">
+          <p class="main__footer-content">© Вадим Векслер | создано с любовью в LoftSchool | 2018</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
