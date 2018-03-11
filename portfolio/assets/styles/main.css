@@ -56,7 +56,7 @@ pre {
 /* Text-level semantics
    ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
+ * Remove the gray 
  */
 a {
   background-color: transparent; }
@@ -467,18 +467,20 @@ section {
   justify-content: center; }
 
 .main__nav-item {
-  border-right: 2px solid rgba(115, 200, 192, 0.85); }
+  border-right: 2px solid rgba(115, 200, 192, 0.85);
+  background-color: rgba(0, 191, 165, 0.85);
+}
+.main__nav-item:hover {
+   background-color: rgba(0, 150, 136, 0.85); }
+
   .main__nav-item:last-child {
     border-right: none; }
 
 .main__nav-link {
   padding: 10px 32px;
-  background-color: rgba(0, 191, 165, 0.85);
   -webkit-transition: .3s;
   transition: .3s;
   font-weight: 500; }
-  .main__nav-link:hover {
-    background-color: rgba(0, 150, 136, 0.85); }
 
 .main__footer {
   position: absolute;
