@@ -8,6 +8,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="./assets/scripts/bundle.js" defer></script>
   </head>
   <body>
@@ -52,8 +54,8 @@
         </header>
         <div class="my-works__triangle">
           <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
-            <polygon class="triangle__left" points="600,0 600,0 1200,0 1200,102"></polygon>
-            <polygon class="triangle__right" points="0,0 0,102 602,0 602,0"></polygon>
+            <polygon class="triangle__left" points="580,0 580,0 1200,0 1200,102"></polygon>
+            <polygon class="triangle__right" points="0,0 0,102 620,0 620,0"></polygon>
           </svg>
         </div>
         <div class="my-works__content slider">
@@ -76,7 +78,8 @@
         </div>
       </section>
       <section class="section about" id="about">
-        <header class="section__header about__header">
+        <div class="about__background"><img class="about__background-img" src="./assets/images/about/about-bg.png" alt="Background"></div>
+        <header class="section__header">
           <h1 class="section__title">
             <p class="lines">Что обо мне </p>
             <p>Говорят</p>
@@ -109,17 +112,20 @@
             </div>
           </li>
         </ul>
-        <div class="about__form about__form-box tinted">
-          <div class="section__subtitle lines about__form-title">Связаться со мной</div>
-          <form class="form form__desc" action="">
-            <input class="form__input" id="user-name" name="user-name" type="text" required="">
-            <input class="form__input" id="e-mail" name="e-mail" type="text" required="">
-            <textarea class="form__textarea" id="message" name="message" type="text" required=""></textarea>
-          </form>
-          <ul class="btns about__form-btns">
-            <li class="btns__item btns__item_w100"><a class="btns__link" href="№">Отправить</a></li>
-            <li class="btns__item btns__item_w100"><a class="btns__link" href="reset">Очистить</a></li>
-          </ul>
+        <div class="about__form-wrap">
+          <div class="about__form"></div>
+          <div class="about__form-content">
+            <div class="section__subtitle lines about__form-title">Связаться со мной</div>
+            <form class="form form__desc" action="">
+              <input class="form__input" id="user-name" name="user-name" type="text" required="" placeholder="Имя">
+              <input class="form__input" id="e-mail" name="e-mail" type="text" required="" placeholder="Email">
+              <textarea class="form__textarea" id="message" name="message" type="text" required="" placeholder="Ваше сообщение"></textarea>
+            </form>
+            <ul class="btns about__form-btns">
+              <li class="btns__item btns__item_w100"><a class="btns__link" href="№">Отправить</a></li>
+              <li class="btns__item btns__item_w100"><a class="btns__link" href="reset">Очистить</a></li>
+            </ul>
+          </div>
         </div>
         <div class="about__arrow"><a class="arrow about__arrow-up" href="#my-works"> </a></div>
         <footer class="footer">
@@ -159,6 +165,6 @@
           </div>
         </footer>
       </section>
-    </div>
+    </div><script src="./assets/scripts/common/blure.js"></script>
   </body>
 </html>
