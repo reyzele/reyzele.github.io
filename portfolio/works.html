@@ -12,25 +12,153 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="maincontent">
-        <section class="section section__hero">
-          <header class="header">
-            <div class="socials">
-              <ul class="socials-list">
-                <li class="social-item"><a class="social-link social-link_vk" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_github" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_in" href="#"></a></li>
-              </ul>
-            </div><a class="hamburger-menu-link" href="#">
-              <div class="hamburger-menu-link__bars"></div></a>
-          </header>
-          <div class="avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="avatar__title avatar__title_works">
-            <h2 class="avatar__title-name">Владимир Астахов</h2>
-            <h3 class="avatar__title-desc">Личный сайт веб разработчика</h3>
+      <section class="section hero">
+        <div class="hero__links">
+          <ul class="socials">
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.vk.ru">
+                <svg class="social__img social__img_hero-vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk">   </use>
+                </svg></a></li>
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.github.com">
+                <svg class="social__img social__img_hero-github">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github">   </use>
+                </svg></a></li>
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.instagram.com">
+                <svg class="social__img social__img_hero-in">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
+                </svg></a></li>
+          </ul>
+        </div><a class="hamburger-menu-link" href="#">
+          <div class="hamburger-menu-link__bars"></div></a>
+        <svg class="hero__title">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+        </svg>
+        <div class="hero__user">
+          <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+          <div class="user__descriptions user__descriptions--works">
+            <h2 class="user__name user__name--works">Владимир Астахов</h2>
+            <h3 class="user__desc">Личный сайт веб разработчика</h3>
           </div>
-        </section>
-      </div>
+        </div><a class="arrow hero__arrow" href="#my-works"> </a>
+      </section>
+      <section class="section my-works" id="my-works">
+        <header class="section__header my-works__header">
+          <h1 class="section__title"> 
+            <p class="lines">Мои Работы</p>
+          </h1>
+          <svg class="section__title-dec my-works__title-dec">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#works_header"></use>
+          </svg>
+        </header>
+        <div class="my-works__triangle">
+          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
+            <polygon class="triangle__left" points="600,0 600,0 1200,0 1200,102"></polygon>
+            <polygon class="triangle__right" points="0,0 0,102 602,0 602,0"></polygon>
+          </svg>
+        </div>
+        <div class="my-works__content slider">
+          <div class="slider__left">
+            <div class="slider__desc">
+              <h3 class="section__subtitle slider__title">
+                <p class="lines">Сайт школы онлайн </p>
+                <p>Образования</p>
+              </h3>
+              <p class="slider__title-text">html, css, javascript</p><a class="slider__btn" href="#"><span class="slider__btn-text">Посмотреть сайт</span></a>
+            </div>
+          </div>
+          <div class="slider__right">
+            <div class="slider__sites"><img class="slider__sites-img" src="./assets/images/slider/slider-sites.png" alt="Sites"></div>
+            <div class="slider__nav">
+              <div class="slider__nav-left"><img class="slider__nav-left-img" src="./assets/images/slider/site-exp.jpg" alt="Site"><a class="slider__arrow-down" href="#"><img class="slider__arrow-down-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></a></div>
+              <div class="slider__nav-right"><img class="slider__nav-right-img" src="./assets/images/slider/site-exp2.jpg" alt="Site"><a class="slider__arrow-up" href="#"><img class="slider__arrow-up-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section about" id="about">
+        <header class="section__header about__header">
+          <h1 class="section__title">
+            <p class="lines">Что обо мне </p>
+            <p>Говорят</p>
+          </h1>
+          <svg class="section__title-dec about__title-dec">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#about_header"></use>
+          </svg>
+        </header>
+        <ul class="about__content">
+          <li class="about__content-item">
+            <div class="about__content-quotes"><img class="about__content-quotes-img" src="./assets/images/about/quotes.png" alt="Quote"></div>
+            <div class="about__content-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+            <div class="about__avatar">
+              <div class="about__avatar-img"><img class="about__avatar-jpg" src="./assets/images/about/Dima.jpg" alt="Dima"></div>
+              <div class="about__avatar-desc">
+                <div class="about__avatar-name">Ковальчук Дмитрий</div>
+                <div class="about__avatar-text">основатель Loftschool</div>
+              </div>
+            </div>
+          </li>
+          <li class="about__content-item">
+            <div class="about__content-quotes"><img class="about__content-quotes-img" src="./assets/images/about/quotes.png" alt="Quote"></div>
+            <div class="about__content-text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+            <div class="about__avatar">
+              <div class="about__avatar-img"><img class="about__avatar-jpg" src="./assets/images/about/Vova.jpg" alt="Vova"></div>
+              <div class="about__avatar-desc">
+                <div class="about__avatar-name">Сабанцев Владимир</div>
+                <div class="about__avatar-text">преподаватель</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="about__form about__form-box tinted">
+          <div class="section__subtitle lines about__form-title">Связаться со мной</div>
+          <form class="form form__desc" action="">
+            <input class="form__input" id="user-name" name="user-name" type="text" required="">
+            <input class="form__input" id="e-mail" name="e-mail" type="text" required="">
+            <textarea class="form__textarea" id="message" name="message" type="text" required=""></textarea>
+          </form>
+          <ul class="btns about__form-btns">
+            <li class="btns__item btns__item_w100"><a class="btns__link" href="№">Отправить</a></li>
+            <li class="btns__item btns__item_w100"><a class="btns__link" href="reset">Очистить</a></li>
+          </ul>
+        </div>
+        <div class="about__arrow"><a class="arrow about__arrow-up" href="#my-works"> </a></div>
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <ul class="menu footer__menu">
+                <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--right">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.vk.ru">
+                    <svg class="social__img social__img-vk">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.github.com">
+                    <svg class="social__img social__img-github">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.instagram.com">
+                    <svg class="social__img social__img-in">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+            </div>
+            <div class="footer__col footer__col--right">
+              <p>© Владимир Астахов | создано с любовью в LoftSchool | 2016</p>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>

@@ -12,25 +12,130 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="maincontent">
-        <section class="section section__hero">
-          <header class="header">
-            <div class="socials">
-              <ul class="socials-list">
-                <li class="social-item"><a class="social-link social-link_vk" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_github" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_in" href="#"></a></li>
-              </ul>
-            </div><a class="hamburger-menu-link" href="#">
-              <div class="hamburger-menu-link__bars"></div></a>
-          </header>
-          <div class="avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="avatar__title avatar__title_works">
-            <h2 class="blog__title-name">блог</h2>
-            <h3 class="blog__title-desc">Статьи, которые я написал</h3>
+      <section class="section blog">
+        <header class="hero blog__hero">
+          <div class="hero__links">
+            <ul class="socials">
+              <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.vk.ru">
+                  <svg class="social__img social__img_hero-vk">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk">   </use>
+                  </svg></a></li>
+              <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.github.com">
+                  <svg class="social__img social__img_hero-github">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github">   </use>
+                  </svg></a></li>
+              <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.instagram.com">
+                  <svg class="social__img social__img_hero-in">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
+                  </svg></a></li>
+            </ul>
+          </div><a class="hamburger-menu-link" href="#">
+            <div class="hamburger-menu-link__bars"></div></a>
+          <svg class="blog__title-dec">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#blog_header"></use>
+          </svg>
+          <div class="hero__user hero__user_blog">
+            <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="user__descriptions blog__user-desc">
+              <h1 class="section__title lines lines_white blog__title">Блог</h1>
+              <h3 class="user__desc">Статьи, которые я написал</h3>
+            </div>
           </div>
-        </section>
-      </div>
+        </header>
+        <div class="blog__content">
+          <div class="blog__triangle">
+            <svg class="triangle blog__triangle-fill" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
+              <polygon points="600,0 600,0 1200,0 1200,102"></polygon>
+              <polygon points="0,0 0,102 602,0 602,0"></polygon>
+            </svg>
+          </div>
+          <div class="blog__description">
+            <nav class="blog__nav">
+              <ul class="blog-nav">
+                <li class="blog-nav__item blog-nav__item_active"><a class="blog-nav__item-link" href="#">Самое важное в SASS</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__item-link" href="#">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__item-link" href="#">Самый необходимый набор Gulp плагинов</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__item-link" href="#">Почему я выбрал Jade</a></li>
+              </ul>
+            </nav>
+            <div class="blog__reviews">
+              <ul class="reviews">
+                <li class="reviews__item">
+                  <h2 class="reviews__item-title">Самое важное в SASS</h2>
+                  <div class="reviews__item-date">22 ноября 2016</div>
+                  <div class="reviews__item-desc"> 
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. </p>
+                    <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                  </div>
+                  <div class="reviews__item-pic"><img class="reviews__item-img" src="./assets/images/blog/review-pic.jpg" alt="Review-pic"></div>
+                </li>
+                <li class="reviews__item">
+                  <h2 class="reviews__item-title">Приёмы в вёрстке, без которых не обходится ни один сайт</h2>
+                  <div class="reviews__item-date">13 ноября 2016</div>
+                  <div class="reviews__item-desc"> 
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                    <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                  </div>
+                </li>
+                <li class="reviews__item">
+                  <h2 class="reviews__item-title">Самый необходимый набор Gulp плагинов</h2>
+                  <div class="reviews__item-date">13 ноября 2016</div>
+                  <div class="reviews__item-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                  </div>
+                </li>
+                <li class="reviews__item">
+                  <h2 class="reviews__item-title">Почему я выбрал Jade</h2>
+                  <div class="reviews__item-date">13 ноября 2016</div>
+                  <div class="reviews__item-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quo laboriosam beatae amet, ut corporis ad ipsam illum corrupti iusto atque delectus. Reprehenderit nostrum autem repellendus tempore culpa inventore quo maxime suscipit quidem laudantium ut dolores, ratione iusto perspiciatis?</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <ul class="menu footer__menu">
+                <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--right">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.vk.ru">
+                    <svg class="social__img social__img-vk">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.github.com">
+                    <svg class="social__img social__img-github">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.instagram.com">
+                    <svg class="social__img social__img-in">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+            </div>
+            <div class="footer__col footer__col--right">
+              <p>© Владимир Астахов | создано с любовью в LoftSchool | 2016</p>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>

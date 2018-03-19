@@ -12,25 +12,175 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="maincontent">
-        <section class="section section__hero">
-          <header class="header">
-            <div class="socials">
-              <ul class="socials-list">
-                <li class="social-item"><a class="social-link social-link_vk" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_github" href="#"></a></li>
-                <li class="social-item"><a class="social-link social-link_in" href="#"></a></li>
-              </ul>
-            </div><a class="hamburger-menu-link" href="#">
-              <div class="hamburger-menu-link__bars"></div></a>
-          </header>
-          <div class="avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="avatar__title avatar__title_works">
-            <h2 class="avatar__title-name">Владимир Астахов</h2>
-            <h3 class="avatar__title-desc">Личный сайт веб разработчика</h3>
+      <section class="section hero">
+        <div class="hero__links">
+          <ul class="socials">
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.vk.ru">
+                <svg class="social__img social__img_hero-vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk">   </use>
+                </svg></a></li>
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.github.com">
+                <svg class="social__img social__img_hero-github">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github">   </use>
+                </svg></a></li>
+            <li class="socials__item_hero"><a class="socials__link socials__link_hero" href="www.instagram.com">
+                <svg class="social__img social__img_hero-in">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
+                </svg></a></li>
+          </ul>
+        </div><a class="hamburger-menu-link" href="#">
+          <div class="hamburger-menu-link__bars"></div></a>
+        <svg class="hero__title">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+        </svg>
+        <div class="hero__user">
+          <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+          <div class="user__descriptions user__descriptions--works">
+            <h2 class="user__name user__name--works">Владимир Астахов</h2>
+            <h3 class="user__desc">Личный сайт веб разработчика</h3>
           </div>
-        </section>
-      </div>
+        </div><a class="arrow hero__arrow" href="#about-me"> </a>
+      </section>
+      <section class="section about-me" id="about-me">
+        <div class="about-me__left">
+          <div class="about-me__triangle">
+            <svg class="triangle triangle_fill_white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
+              <polygon points="0,0 210,0 1200,0 1200,210"></polygon>
+            </svg>
+          </div>
+          <div class="about-me__left-wrap">
+            <header class="section__header about-me__header">
+              <h1 class="section__title lines about-me__title">Обо мне</h1>
+              <svg class="section__title-dec about-me__title-dec">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#about_header"></use>
+              </svg>
+            </header>
+            <div class="about-me__description">
+              <div class="about-me__pic"><img class="about-me__img" src="./assets/images/about-me/me.jpg" alt="Me"></div>
+              <div class="about-me__desc">
+                <div class="section__subtitle lines about-me__left-subtitle">Кто я</div>
+                <div class="about-me__text">
+                  <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p><br>
+                  <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-me__right">
+          <div class="about-me__triangle">
+            <svg class="triangle triangle_fill_badge" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
+              <polygon points="0,0 0,210 1200,0 1200,0"></polygon>
+            </svg>
+          </div>
+          <div class="about-me__right-wrap">
+            <div class="section__subtitle about-me__right-subtitle">
+              <p class="lines">Чем я могу быть</p>
+              <p>Вам полезен</p>
+            </div>
+            <div class="about-me__right-desc">
+              <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+            </div>
+            <div class="about-me__right-content">
+              <ul class="skills-list">
+                <li class="skills-list__item">
+                  <div class="skills-list__row">
+                    <div class="skills-list__title">Frontend</div>
+                    <ul class="skills">
+                      <li class="skills__item"></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="skills-list__item">
+                  <div class="skills-list__row">
+                    <div class="skills-list__title">Backend</div>
+                    <ul class="skills">
+                      <li class="skills__item"></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="skills-list__item">
+                  <div class="skills-list__row">
+                    <div class="skills-list__title">Workflow</div>
+                    <ul class="skills">
+                      <li class="skills__item"></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contacts">
+        <div class="contscts__content">
+          <div class="overlay">
+            <div class="section__subtitle lines overlay__title">Контакты</div>
+            <ul class="overlay__list">
+              <li class="overlay__item">
+                <svg class="overlay__item-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#skype"></use>
+                </svg>
+                <div class="overlay__item-desc">skype_kdn</div>
+              </li>
+              <li class="overlay__item">
+                <svg class="overlay__item-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#envelope"></use>
+                </svg>
+                <div class="overlay__item-desc">astahov@gmail.com</div>
+              </li>
+              <li class="overlay__item">
+                <svg class="overlay__item-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#phone"></use>
+                </svg>
+                <div class="overlay__item-desc">+7 931 200 93 24</div>
+              </li>
+              <li class="overlay__item">
+                <svg class="overlay__item-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#map_marker"></use>
+                </svg>
+                <div class="overlay__item-desc">г.Новосибирск, ул. Инская, д. 5</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <ul class="menu footer__menu">
+                <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col--right">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.vk.ru">
+                    <svg class="social__img social__img-vk">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.github.com">
+                    <svg class="social__img social__img-github">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link_footer" href="www.instagram.com">
+                    <svg class="social__img social__img-in">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col footer__col--left">
+              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+            </div>
+            <div class="footer__col footer__col--right">
+              <p>© Владимир Астахов | создано с любовью в LoftSchool | 2016</p>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>
