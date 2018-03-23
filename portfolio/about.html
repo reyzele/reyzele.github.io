@@ -11,10 +11,11 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="./assets/scripts/bundle.js" defer></script>
+    <script src="./assets/scripts/common/snap.svg-min.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <section class="section hero">
+      <section class="section hero" id="hero">
         <div class="hero__links">
           <ul class="socials">
             <li class="socials__item"><a class="socials__link socials__link_hero" href="www.vk.ru">
@@ -41,13 +42,13 @@
             <h2 class="user__name user__name--hero">Владимир Астахов</h2>
             <h3 class="user__desc">Личный сайт веб разработчика</h3>
           </div>
-        </div><a class="arrow hero__arrow" href="#about-me"> </a>
+        </div><a class="arrow hero__arrow" href="#about-me" id="about-arrow"></a>
       </section>
       <section class="section about-me" id="about-me">
         <div class="about-me__left">
           <div class="about-me__triangle">
             <svg class="triangle triangle_fill_white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
-              <polygon points="-20,0 0,0 1200,0 1200,210"></polygon>
+              <polygon points="0,4 0,0 1200,0 1200,210"></polygon>
             </svg>
           </div>
           <div class="about-me__left-wrap">
@@ -72,7 +73,7 @@
         <div class="about-me__right">
           <div class="about-me__triangle">
             <svg class="triangle triangle_fill_badge" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
-              <polygon points="0,0 0,210 1220,0 1220,0"></polygon>
+              <polygon points="0,0 0,210 1200,4 1220,0"></polygon>
             </svg>
           </div>
           <div class="about-me__right-wrap">
@@ -81,12 +82,20 @@
               <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
             </div>
             <div class="about-me__right-content">
-              <ul class="skills-list">
+              <ul class="skills-list" id="skills">
                 <li class="skills-list__item">
                   <div class="skills-list__row">
                     <div class="skills-list__title">Frontend</div>
                     <ul class="skills">
-                      <li class="skills__item"></li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="html"></svg><span class="skills__item-title">HTML5</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="css"></svg><span class="skills__item-title">CSS3</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="js"></svg><span class="skills__item-title">JavaScript & jQuery</span>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -94,15 +103,34 @@
                   <div class="skills-list__row">
                     <div class="skills-list__title">Backend</div>
                     <ul class="skills">
-                      <li class="skills__item"></li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="php"></svg><span class="skills__item-title">PHP</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="mySQL"></svg><span class="skills__item-title">mySQL</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="node"></svg><span class="skills__item-title">Node.js & npm</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="mango"></svg><span class="skills__item-title">Mongo.db</span>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li class="skills-list__item">
                   <div class="skills-list__row">
-                    <div class="skills-list__title">Workflow</div>
+                    <div class="skills-list__title">WorkFlow</div>
                     <ul class="skills">
-                      <li class="skills__item"></li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="git"></svg><span class="skills__item-title">Git</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="gulp"></svg><span class="skills__item-title">Gulp</span>
+                      </li>
+                      <li class="skills__item">
+                        <svg class="skills__item-skill" id="bower"></svg><span class="skills__item-title">Bower</span>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -111,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="contscts__content">
           <div class="overlay">
             <h2 class="section__subtitle section__subtitle_lines overlay__title">Контакты</h2>
