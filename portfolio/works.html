@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./assets/scripts/bundle.js" defer></script>
-    <script src="./assets/scripts/common/snap.svg-min.js"></script>
+    <script src="./assets/scripts/bundle.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,8 +30,8 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
                 </svg></a></li>
           </ul>
-        </div><a class="hamburger-menu-link" href="#">
-          <div class="hamburger-menu-link__bars"></div></a>
+        </div>
+        <div class="hamburger-menu"><span></span></div>
         <svg class="hero__title">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
         </svg>
@@ -60,15 +59,26 @@
         <div class="works__content">
           <div class="works__left">
             <div class="slider__content">
-              <h2 class="section__subtitle section__subtitle_lines slider__title">Сайт школы онлайн<br>Образования</h2>
-              <p class="slider__title-text">html, css, javascript</p><a class="slider__btn" href="#"><span class="slider__btn-text">Посмотреть сайт</span></a>
+              <div class="slider__display"><img class="slider__display-img" src="" alt=""></div>
+              <div class="slider__content-descriptions">
+                <h2 class="section__subtitle section__subtitle_lines works__subtitle">
+                  <div class="subtitle"></div>
+                </h2>
+                <p class="slider__content-text"></p><a class="works__btn" href="#"><span class="slider__content-btn-text">Посмотреть сайт</span></a>
+              </div>
             </div>
           </div>
           <div class="works__right">
-            <div class="slider__view"><img class="slider__sites-img" src="./assets/images/slider/slider-sites.png" alt="Sites"></div>
-            <div class="slider__controls">
-              <div class="slider__controls-left"><img class="slider__controls-left-img" src="./assets/images/slider/site-exp.jpg" alt="Site"><a class="slider__arrow-down" href="#"><img class="slider__arrow-down-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></a></div>
-              <div class="slider__controls-right"><img class="slider__controls-right-img" src="./assets/images/slider/site-exp2.jpg" alt="Site"><a class="slider__arrow-up" href="#"><img class="slider__arrow-up-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></a></div>
+            <div class="slider">
+              <div class="slider__controls"><a class="slider__controls-btn slider__controls-btn_left" href="#">
+                  <div class="slider__arrow slider__arrow_down"><img class="slider__arrow-down-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></div>
+                  <ul class="slider__controls-list">
+                    <li class="slider__controls-item" data-full="./assets/images/slider/1.png" data-title="Агентсво интернет решений &quot;ITLoft&quot;" data-skills="html5, css3, javascript" data-link="http://itloft.ru/"><img class="slider__controls-img" src="./assets/images/slider/1.png"></li>
+                    <li class="slider__controls-item" data-full="./assets/images/slider/2.png" data-title="Lorem ipsum dolor sit" data-skills="html5, css3, javascript" data-link="http://itloft.ru/"><img class="slider__controls-img" src="./assets/images/slider/2.png"></li>
+                    <li class="slider__controls-item" data-full="./assets/images/slider/3.png" data-title="Lorem ipsum dolor sit amet." data-skills="html5, css3, javascript" data-link="http://itloft.ru/"><img class="slider__controls-img" src="./assets/images/slider/3.png"></li>
+                    <li class="slider__controls-item" data-full="./assets/images/slider/4.png" data-title="Сайт школы онлайн Образования" data-skills="html5, css3, javascript" data-link="http://itloft.ru/"><img class="slider__controls-img" src="./assets/images/slider/4.png"></li>
+                  </ul></a><a class="slider__controls-btn slider__controls-btn_right" href="#">
+                  <div class="slider__arrow slider__arrow_top"><img class="slider__arrow-down-img" src="./assets/images/slider/slider-arrow.png" alt="Arrow"></div></a></div>
             </div>
           </div>
         </div>
@@ -162,6 +172,18 @@
           </div>
         </footer>
       </section>
-    </div><script src="./assets/scripts/common/blure.js"></script>
+      <div class="overlay-menu" id="overlay-menu">
+        <nav class="overlay-menu__content">
+          <ul class="menu overlay-menu__list">
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="works.html">Мои работы</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="about.html">Обо мне</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="blog.html">Блог</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="index.html">Авторизация</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="./assets/scripts/common/blure.js"></script>
+    <script src="./assets/scripts/common/slider.js"></script>
   </body>
 </html>
