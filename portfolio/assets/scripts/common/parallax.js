@@ -15,7 +15,7 @@ var moveLayers = function (e) {
       positionX = initialX * divider,
       positionY = initialY * divider,
       Procent = window.innerHeight / 100 * 20;
-    bottomPosition = (window.innerHeight / 2) * divider + Procent,
+      bottomPosition = (window.innerHeight / 2) * divider + Procent,
       transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
       image = layer.firstElementChild;
 
