@@ -15,6 +15,7 @@
   <body>
     <div class="wrapper">
       <section class="section hero" id="hero">
+        <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
         <div class="hero__links">
           <ul class="socials">
             <li class="socials__item"><a class="socials__link socials__link_hero" href="www.vk.ru">
@@ -30,16 +31,19 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
                 </svg></a></li>
           </ul>
+        </div><a class="hamburger-menu"><span></span></a>
+        <div class="hero__title">
+          <svg class="hero__title-img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+          </svg>
         </div>
-        <div class="hamburger-menu"><span></span></div>
-        <svg class="hero__title">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
-        </svg>
-        <div class="user hero__user">
-          <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="user__descriptions user__descriptions--hero">
-            <h2 class="user__name user__name--hero">Владимир Астахов</h2>
-            <h3 class="user__desc">Личный сайт веб разработчика</h3>
+        <div class="hero__user">
+          <div class="user">
+            <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="user__descriptions user__descriptions--hero">
+              <h2 class="user__name user__name--hero">Владимир Астахов</h2>
+              <h3 class="user__desc">Личный сайт веб разработчика</h3>
+            </div>
           </div>
         </div><a class="arrow hero__arrow" href="#works"> </a>
       </section>
@@ -185,5 +189,6 @@
     </div>
     <script src="./assets/scripts/common/blure.js"></script>
     <script src="./assets/scripts/common/slider.js"></script>
+    <script src="./assets/scripts/common/hero-parallax.js"></script>
   </body>
 </html>

@@ -33,7 +33,7 @@ class CreateSkill {
         this.bgCircle.attr({
           strokeDashoffset: val
         });
-      }, 700, mina.easeinout);
+      }, 1500, mina.easeinout);
   }
 }
 
@@ -54,8 +54,9 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
   var offset = $('.skills').offset();
+  console.log('offset');
   var scrollBottom = offset.top - $(window).height();
-  if ($(this).scrollTop() > scrollBottom && $(this).scrollTop() < (scrollBottom + 40)) {
+  if ($(this).scrollTop() > scrollBottom && $(this).scrollTop() < (scrollBottom + 80)) {
     skills();
   }
 });
