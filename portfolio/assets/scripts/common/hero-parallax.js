@@ -17,7 +17,7 @@ var HeroParallax = (function () {
     init: function (wScroll) {
       this.move(bg, wScroll, 15);
       this.move(sectionText, wScroll, 20);
-      this.move(user, wScroll, 30);
+      this.move(user, wScroll, -20);
     }
   };
 }());
