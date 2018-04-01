@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./assets/scripts/bundle.js"></script>
+    <script src="./assets/scripts/bundle.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <section class="section hero">
+      <section class="section hero" id="hero">
+        <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
         <div class="hero__links">
           <ul class="socials">
             <li class="socials__item"><a class="socials__link socials__link_hero" href="www.vk.ru">
@@ -30,16 +31,19 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
                 </svg></a></li>
           </ul>
+        </div><a class="hamburger-menu"><span></span></a>
+        <div class="hero__title">
+          <svg class="hero__title-img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+          </svg>
         </div>
-        <div class="hamburger-menu"><span></span></div>
-        <svg class="hero__title">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
-        </svg>
-        <div class="user hero__user">
-          <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="user__descriptions user__descriptions--hero">
-            <h2 class="user__name user__name--hero">Владимир Астахов</h2>
-            <h3 class="user__desc">Личный сайт веб разработчика</h3>
+        <div class="hero__user">
+          <div class="user">
+            <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="user__descriptions user__descriptions--hero">
+              <h2 class="user__name user__name--hero">Владимир Астахов</h2>
+              <h3 class="user__desc">Личный сайт веб разработчика</h3>
+            </div>
           </div>
         </div><a class="arrow hero__arrow" href="#works"> </a>
       </section>
@@ -50,10 +54,10 @@
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#works_header"></use>
           </svg>
         </header>
-        <div class="works__triangle">
-          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
-            <polygon class="triangle__left" points="600,4 600,0 1200,0 1200,102"></polygon>
-            <polygon class="triangle__right" points="0,0 0,102 600.8,4 600.8,0"></polygon>
+        <div class="triangle__wrap">
+          <svg class="triangle works__triangle-fill" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
+            <polygon points="600,4 600,0 1200,0 1200,102"></polygon>
+            <polygon points="0,0 0,102 600.8,4 600.8,0"></polygon>
           </svg>
         </div>
         <div class="works__content">
@@ -86,7 +90,7 @@
       <section class="section about" id="about">
         <div class="about__background"><img class="about__background-img" src="./assets/images/about/about-bg.png" alt="Background"></div>
         <header class="section__header">
-          <h1 class="section__title section__title_lines"> Что обо мне<br>Говорят</h1>
+          <h1 class="section__title section__title_lines about__title"> Что обо мне Говорят</h1>
           <svg class="section__title-dec about__title-dec">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#about_header"></use>
           </svg>
@@ -134,7 +138,7 @@
             </ul>
           </form>
         </div>
-        <div class="about__arrow"><a class="arrow about__arrow-up" href="#works"> </a></div>
+        <div class="about__arrow"><a class="arrow about__arrow-up" href="#hero"> </a></div>
         <footer class="footer">
           <div class="footer__row">
             <div class="footer__col footer__col--left">
@@ -183,7 +187,5 @@
         </nav>
       </div>
     </div>
-    <script src="./assets/scripts/common/blure.js"></script>
-    <script src="./assets/scripts/common/slider.js"></script>
   </body>
 </html>

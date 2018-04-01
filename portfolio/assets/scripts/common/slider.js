@@ -194,10 +194,9 @@ var Slider = function (container) {
 
     // текстовые описания
     changeTextData(_that.counter);
-
   };
-
   this.moveSlide = function (direction) {
+    let timeout;
     var _that = this;
     // if (direction === "next") {
     //   if (_that.counter < itemsLength - 1) {
@@ -237,7 +236,7 @@ var Slider = function (container) {
     if (flag) {
       flag = false;
 
-      if (typeof timeout != 'undefined') {
+      if (typeof timeout !== 'undefined') {
         clearTimeout(timeout);
       }
 
@@ -252,16 +251,4 @@ var Slider = function (container) {
     }
   };
 };
-
-var slider = new Slider($('.works'));
-slider.setDefaults();
-
-$('.slider__controls-btn_left').on('click', function (e) {
-  e.preventDefault();
-  slider.moveSlide('prev');
-});
-
-$('.slider__controls-btn_right').on('click', function (e) {
-  e.preventDefault();
-  slider.moveSlide('next');
-});
+export {Slider};

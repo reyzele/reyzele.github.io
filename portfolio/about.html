@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./assets/scripts/bundle.js"></script>
+    <script src="./assets/scripts/bundle.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <section class="section hero" id="hero">
+        <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
         <div class="hero__links">
           <ul class="socials">
             <li class="socials__item"><a class="socials__link socials__link_hero" href="www.vk.ru">
@@ -30,22 +31,31 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
                 </svg></a></li>
           </ul>
+        </div><a class="hamburger-menu"><span></span></a>
+        <div class="hero__title">
+          <svg class="hero__title-img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+          </svg>
         </div>
-        <div class="hamburger-menu"><span></span></div>
-        <svg class="hero__title">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
-        </svg>
-        <div class="user hero__user">
-          <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
-          <div class="user__descriptions user__descriptions--hero">
-            <h2 class="user__name user__name--hero">Владимир Астахов</h2>
-            <h3 class="user__desc">Личный сайт веб разработчика</h3>
+        <div class="hero__user">
+          <div class="user">
+            <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="user__descriptions user__descriptions--hero">
+              <h2 class="user__name user__name--hero">Владимир Астахов</h2>
+              <h3 class="user__desc">Личный сайт веб разработчика</h3>
+            </div>
           </div>
         </div><a class="arrow hero__arrow" href="#about-me" id="about-arrow"></a>
       </section>
       <section class="section about-me" id="about-me">
+        <div class="triangle__wrap about-me__triangle-tablets">
+          <svg class="triangle about-me__triangle-fill" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 102" preserveaspectratio="none">
+            <polygon points="600,4 600,0 1200,0 1200,102"></polygon>
+            <polygon points="0,0 0,102 600.8,4 600.8,0"></polygon>
+          </svg>
+        </div>
         <div class="about-me__left">
-          <div class="about-me__triangle">
+          <div class="about-me__triangle-desktop">
             <svg class="triangle triangle_fill_white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
               <polygon points="0,4 0,0 1200,0 1200,210"></polygon>
             </svg>
@@ -70,7 +80,7 @@
           </div>
         </div>
         <div class="about-me__right">
-          <div class="about-me__triangle">
+          <div class="about-me__triangle-desktop">
             <svg class="triangle triangle_fill_badge" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 210" preserveaspectratio="none">
               <polygon points="0,0 0,210 1200,4 1220,0"></polygon>
             </svg>
@@ -215,6 +225,5 @@
       </div>
     </div>
     <script src="./assets/scripts/common/snap.svg-min.js"></script>
-    <script src="./assets/scripts/common/skills.js"></script>
   </body>
 </html>
