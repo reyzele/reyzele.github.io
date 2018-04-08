@@ -32,17 +32,16 @@ let scrollMenu = (function () {
     }
     positionArticle.forEach((element, index) => {
       let $currentElement = $item.eq(index);
+      let $bottomOfPage = Math.ceil($(window).scrollTop());
       if (isFirstVision(element, $currentElement)) {
         $currentElement.addClass('blog-nav__item_active').siblings().removeClass('blog-nav__item_active')
-      }
-      else if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+      } else if ($bottomOfPage == $(document).height() - $(window).height()) {
         $currentElement.addClass('blog-nav__item_active').siblings().removeClass('blog-nav__item_active')
       }
     })
   }
 
   const _clickMenu = function (e) {
-    console.log(e.target)
     if (flagAnimation) {
       flagAnimation = false;
       let $element = $(e.target)

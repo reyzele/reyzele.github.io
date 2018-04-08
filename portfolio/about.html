@@ -12,7 +12,12 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="./assets/scripts/bundle.js" defer></script>
   </head>
-  <body>
+  <body class="fixed hidden">
+    <div class="preloader" id="page-preloader">
+      <div class="loader-1"></div>
+      <div class="loader-2"></div>
+      <div class="loader-3"></div><span id="load_perc">0%</span>
+    </div>
     <div class="wrapper">
       <section class="section hero" id="hero">
         <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
