@@ -7,10 +7,10 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./assets/scripts/bundle.js" defer></script>
+    <script src="./assets/scripts/libs/jquery.min.js"></script>
+    <script src="./assets/scripts/main.bundle.js" defer></script>
   </head>
   <body class="fixed hidden">
     <div class="preloader" id="page-preloader">
@@ -23,15 +23,15 @@
         <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
         <div class="hero__links">
           <ul class="socials">
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="www.vk.ru">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.vk.com">
                 <svg class="socials__img socials__img_vk">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk">   </use>
                 </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="www.github.com">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.github.com">
                 <svg class="socials__img socials__img_github">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github">   </use>
                 </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="www.instagram.com">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.instagram.com">
                 <svg class="socials__img socials__img_in">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
                 </svg></a></li>
@@ -50,7 +50,10 @@
               <h3 class="user__desc">Личный сайт веб разработчика</h3>
             </div>
           </div>
-        </div><a class="arrow hero__arrow" href="#about-me" id="about-arrow"></a>
+        </div><a class="arrow hero__arrow" href="#about-me"> 
+          <svg class="arrow__img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#arrow"> </use>
+          </svg></a>
       </section>
       <section class="section about-me" id="about-me">
         <div class="triangle__wrap about-me__triangle-tablets">
@@ -185,23 +188,23 @@
           <div class="footer__row">
             <div class="footer__col footer__col--left">
               <ul class="menu footer__menu">
-                <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
-                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+                <li class="menu__item"><a class="menu__link" href="/works">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="/blog">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="/index">Авторизация</a></li>
               </ul>
             </div>
             <div class="footer__col footer__col--right">
               <ul class="socials">
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="www.vk.ru">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.vk.com">
                     <svg class="socials__img socials__img_footer_vk">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk"></use>
                     </svg></a></li>
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="www.github.com">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.github.com">
                     <svg class="socials__img socials__img_footer_github">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github"></use>
                     </svg></a></li>
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="www.instagram.com">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.instagram.com">
                     <svg class="socials__img socials__img_footer_in">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in"></use>
                     </svg></a></li>
@@ -221,14 +224,14 @@
       <div class="overlay-menu" id="overlay-menu">
         <nav class="overlay-menu__content">
           <ul class="menu overlay-menu__list">
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="works.html">Мои работы</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="about.html">Обо мне</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="blog.html">Блог</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="index.html">Авторизация</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/works">Мои работы</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/about">Обо мне</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/blog">Блог</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/index">Авторизация</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <script src="./assets/scripts/common/snap.svg-min.js"></script>
+    <script src="./assets/scripts/libs/snap.svg-min.js"></script>
   </body>
 </html>
