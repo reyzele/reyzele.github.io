@@ -20,7 +20,12 @@
     </div>
     <div class="wrapper">
       <section class="section hero" id="hero">
-        <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
+        <div class="hero__bg">
+          <picture>
+            <source class="displaynone" srcset="./assets/images/check.png" media="(max-width: 768px)">
+            <source srcset="./assets/images/mountains-bg.png"><img class="hero__bg-img" srcset="./assets/images/mountains-bg.png">
+          </picture>
+        </div>
         <div class="hero__links">
           <ul class="socials">
             <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.vk.com">
@@ -158,10 +163,10 @@
           <div class="footer__row">
             <div class="footer__col footer__col--left">
               <ul class="menu footer__menu">
-                <li class="menu__item"><a class="menu__link" href="./works.html">Мои работы</a></li>
-                <li class="menu__item"><a class="menu__link" href="./about.html">Обо мне</a></li>
-                <li class="menu__item"><a class="menu__link" href="./blog.html">Блог</a></li>
-                <li class="menu__item"><a class="menu__link" href="./index.html">Авторизация</a></li>
+                <li class="menu__item"><a class="menu__link" href="/works">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="/blog">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="/index">Авторизация</a></li>
               </ul>
             </div>
             <div class="footer__col footer__col--right">
@@ -194,10 +199,10 @@
       <div class="overlay-menu" id="overlay-menu">
         <nav class="overlay-menu__content">
           <ul class="menu overlay-menu__list">
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./works.html">Мои работы</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./about.html">Обо мне</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./blog.html">Блог</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./index.html">Авторизация</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/works">Мои работы</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/about">Обо мне</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/blog">Блог</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/index">Авторизация</a></li>
           </ul>
         </nav>
       </div>
