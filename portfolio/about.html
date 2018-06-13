@@ -2,57 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Обо мне</title>
+    <title></title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./assets/styles/main.min.css">
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <script src="./assets/scripts/libs/jquery.min.js"></script>
-    <script src="./assets/scripts/main.bundle.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="./scripts/libs/jquery.min.js"></script>
+    <script src="./scripts/main.bundle.js" defer></script>
   </head>
-  <body class="fixed hidden">
-    <div class="preloader" id="page-preloader">
+  <body>
+    <div class="preloader" id="preloader">
       <div class="loader-1"></div>
       <div class="loader-2"></div>
       <div class="loader-3"></div><span id="load_perc">0%</span>
     </div>
     <div class="wrapper">
       <section class="section hero" id="hero">
-        <div class="hero__bg"><img class="hero__bg-img" src="./assets/images/mountains-bg.png"></div>
+        <div class="hero__bg">
+          <picture>
+            <source class="displaynone" srcset="./images/check.png" media="(max-width: 768px)">
+            <source srcset="./images/backgrounds/mountains-bg.png"><img class="hero__bg-img" src="./images/backgrounds/mountains-bg.png" srcset="./images/backgrounds/mountains-bg.png">
+          </picture>
+        </div>
         <div class="hero__links">
           <ul class="socials">
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.vk.com">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="https://vk.com/id476946962" target="_blank">
                 <svg class="socials__img socials__img_vk">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk">   </use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#vk"></use>
                 </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.github.com">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="https://github.com/reyzele" target="_blank">
                 <svg class="socials__img socials__img_github">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github">   </use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#github"></use>
                 </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_hero" href="http://www.instagram.com">
+            <li class="socials__item"><a class="socials__link socials__link_hero" href="https://www.facebook.com/isQVad" target="_blank">
                 <svg class="socials__img socials__img_in">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in">   </use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#in"></use>
                 </svg></a></li>
           </ul>
         </div><a class="hamburger-menu"><span></span></a>
         <div class="hero__title">
           <svg class="hero__title-img">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#portfolio_header"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
         <div class="hero__user">
           <div class="user">
-            <div class="user__avatar" style="background-image: url(./assets/images/avatar.jpg)"><img class="visuallyhidden" src="./assets/images/avatar.jpg" alt="Avatar"></div>
+            <div class="user__avatar"><img class="user__avatar-img" src="./images/avatar.jpg" alt="Avatar"></div>
             <div class="user__descriptions user__descriptions--hero">
-              <h2 class="user__name user__name--hero">Владимир Астахов</h2>
+              <h2 class="user__name user__name--hero">Вадим Векслер</h2>
               <h3 class="user__desc">Личный сайт веб разработчика</h3>
             </div>
           </div>
         </div><a class="arrow hero__arrow" href="#about-me"> 
           <svg class="arrow__img">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#arrow"> </use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#arrow"> </use>
           </svg></a>
       </section>
       <section class="section about-me" id="about-me">
@@ -72,11 +77,11 @@
             <header class="section__header about-me__header">
               <h1 class="section__title section__title_lines about-me__title">Обо мне</h1>
               <svg class="section__title-dec about-me__title-dec">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#about_header"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#about_header"></use>
               </svg>
             </header>
             <div class="about-me__description">
-              <div class="about-me__pic"><img class="about-me__img" src="./assets/images/about-me/me.jpg" alt="Me"></div>
+              <div class="about-me__pic"><img class="about-me__img" src="./images/avatar.jpg" alt="Me"></div>
               <div class="about-me__desc">
                 <h2 class="section__subtitle section__subtitle_lines about-me__left-subtitle">Кто я</h2>
                 <div class="about-me__text">
@@ -99,57 +104,91 @@
               <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
             </div>
             <div class="about-me__right-content">
-              <ul class="skills-list" id="skills">
+              <ul class="skills-list" id="skills"> 
                 <li class="skills-list__item">
-                  <div class="skills-list__row">
-                    <div class="skills-list__title">Frontend</div>
-                    <ul class="skills">
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="html"></svg><span class="skills__item-title">HTML5</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="css"></svg><span class="skills__item-title">CSS3</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="js"></svg><span class="skills__item-title">JavaScript & jQuery</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <h4 class="skills-list__title">Frontend</h4>
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__item-title">HTML5</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.95">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="95"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">CSS3</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.90">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="90"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">JavaScript &amp; jQuery</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.60">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="60"></circle>
+                      </svg>
+                    </li>
+                  </ul>
                 </li>
                 <li class="skills-list__item">
-                  <div class="skills-list__row">
-                    <div class="skills-list__title">Backend</div>
-                    <ul class="skills">
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="php"></svg><span class="skills__item-title">PHP</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="mySQL"></svg><span class="skills__item-title">mySQL</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="node"></svg><span class="skills__item-title">Node.js & npm</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="mango"></svg><span class="skills__item-title">Mongo.db</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <h4 class="skills-list__title">Backend</h4>
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__item-title">PHP</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.30">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="30"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">mySQL</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.80">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="80"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">Node.js &amp; npm</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.40">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="40"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">Mongo.db</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.50">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="50"></circle>
+                      </svg>
+                    </li>
+                  </ul>
                 </li>
                 <li class="skills-list__item">
-                  <div class="skills-list__row">
-                    <div class="skills-list__title">WorkFlow</div>
-                    <ul class="skills">
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="git"></svg><span class="skills__item-title">Git</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="gulp"></svg><span class="skills__item-title">Gulp</span>
-                      </li>
-                      <li class="skills__item">
-                        <svg class="skills__item-skill" id="bower"></svg><span class="skills__item-title">Bower</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <h4 class="skills-list__title">WorkFlow</h4>
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__item-title">Git</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.80">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="80"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">Gulp</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.90">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="90"></circle>
+                      </svg>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__item-title">Bower</div>
+                      <svg class="skills__circle" viewBox="0 0 110 110" style="opacity: 0.70">
+                        <circle class="skills__first-circle" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="skills__second-circle" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-percent="70"></circle>
+                      </svg>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -163,22 +202,22 @@
             <ul class="overlay__list">
               <li class="overlay__item"><a class="overlay__item-link" href="skype:skype_kdn?call">
                   <svg class="overlay__item-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#skype"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#skype"></use>
                   </svg>
                   <div class="overlay__item-desc">skype_kdn</div></a></li>
               <li class="overlay__item"><a class="overlay__item-link" href="mailto:astahov@gmail.com">
                   <svg class="overlay__item-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#envelope"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#envelope"></use>
                   </svg>
                   <div class="overlay__item-desc">astahov@gmail.com</div></a></li>
               <li class="overlay__item"><a class="overlay__item-link" href="tel:+79312009324">
                   <svg class="overlay__item-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#phone"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#phone"></use>
                   </svg>
                   <div class="overlay__item-desc">+7 931 200 93 24</div></a></li>
               <li class="overlay__item"><a class="overlay__item-link" href="http://maps.google.com/maps?q=loc:36.26577,-92.54324">
                   <svg class="overlay__item-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#map_marker"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#map_marker"></use>
                   </svg>
                   <div class="overlay__item-desc">г.Новосибирск, ул. Инская, д. 5</div></a></li>
             </ul>
@@ -188,35 +227,35 @@
           <div class="footer__row">
             <div class="footer__col footer__col--left">
               <ul class="menu footer__menu">
-                <li class="menu__item"><a class="menu__link" href="./works.html">Мои работы</a></li>
-                <li class="menu__item"><a class="menu__link" href="./about.html">Обо мне</a></li>
-                <li class="menu__item"><a class="menu__link" href="./blog.html">Блог</a></li>
-                <li class="menu__item"><a class="menu__link" href="./index.html">Авторизация</a></li>
+                <li class="menu__item"><a class="menu__link" href="/works">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="/blog">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="/">Авторизация</a></li>
               </ul>
             </div>
             <div class="footer__col footer__col--right">
               <ul class="socials">
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.vk.com">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="https://vk.com/id476946962" target="_blank">
                     <svg class="socials__img socials__img_footer_vk">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#vk"></use>
                     </svg></a></li>
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.github.com">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="https://github.com/reyzele" target="_blank">
                     <svg class="socials__img socials__img_footer_github">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#github"></use>
                     </svg></a></li>
-                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="http://www.instagram.com">
+                <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer" href="https://www.facebook.com/isQVad" target="_blank">
                     <svg class="socials__img socials__img_footer_in">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#in"></use>
                     </svg></a></li>
               </ul>
             </div>
           </div>
           <div class="footer__row">
             <div class="footer__col footer__col--left">
-              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+              <p>Я веб-разработчик из Израиля.</p>
             </div>
             <div class="footer__col footer__col--right">
-              <p>© Владимир Астахов | создано с любовью в LoftSchool | 2016</p>
+              <p>© Вадим Векслер | личный сайт веб-разработчика | 2018</p>
             </div>
           </div>
         </footer>
@@ -224,14 +263,13 @@
       <div class="overlay-menu" id="overlay-menu">
         <nav class="overlay-menu__content">
           <ul class="menu overlay-menu__list">
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./works.html">Мои работы</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./about.html">Обо мне</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./blog.html">Блог</a></li>
-            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="./index.html">Авторизация</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/works">Мои работы</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/about">Обо мне</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/blog">Блог</a></li>
+            <li class="menu__item overlay-menu__item"><a class="overlay-menu__link" href="/">Авторизация</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <script src="./assets/scripts/libs/snap.svg-min.js"></script>
   </body>
 </html>
