@@ -49,7 +49,7 @@
           <div class="main-content__desc">
             <div class="basket" id="App">
               <div class="basket__top-line">
-                <div class="basket__top-line_left"><span class="text">Выделено </span><span class="number" id="countOfChecks">45</span></div><a class="basket__top-line_right" href="#" id="deleteItem"><i class="fa fa-window-close"></i><span class="text">Удалить отмеченные</span></a>
+                <div class="basket__top-line_left"><span class="text">Выделено </span><span class="number" id="countOfChecks"></span></div><a class="basket__top-line_right" href="#" id="deleteItem"><i class="fa fa-window-close"></i><span class="text">Удалить отмеченные</span></a>
               </div>
               <div class="basket__desc">
                 <ul class="basket__list"></ul>
@@ -76,7 +76,7 @@
                   <div class="basket__item-icon"><img class="basket__item-img" src="{{img}}" alt="{{name}}"></div>
                   <div class="basket__item-desc">{{name}}</div>
                   <div class="basket__item-price"><span class="basket__item-price_one">{{price}} р</span><span class="basket__item-price_one">X</span>
-                    <input class="input basket__item-input" id="count" value="{{count}}" data-id="{{id}}" data-count="{{count}}" data-name="{{name}}" data-price="{{price}}"><span class="basket__item-price_one">=</span><span class="basket__item-price_total" id="total"></span>
+                    <input class="input basket__item-input" id="count" value="{{count}}" data-id="{{@index}}" data-count="{{count}}" data-name="{{name}}" data-price="{{price}}"><span class="basket__item-price_one">=</span><span class="basket__item-price_total" id="total"></span>
                   </div>
                 </li>
                 {{/each}}
